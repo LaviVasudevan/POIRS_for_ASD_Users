@@ -1,0 +1,563 @@
+{"_id":{"$oid":"68ad998806f2e30770720c59"},"poi_id":"poi_be0c0a8d","name":"Anjappar Chettinad Restaurant","category":"Restaurant/Cafe"}
+{"_id":{"$oid":"68ad998806f2e30770720c64"},"poi_id":"poi_91d4abf9","name":"Anna Centenary Library","category":"Library/Educational"}
+{"_id":{"$oid":"68ad998806f2e30770720c68"},"poi_id":"poi_c42d4d5e","name":"Arulmigu Vadapalani Murugan Temple","category":"Religious"}
+{"_id":{"$oid":"68ad998806f2e30770720c6f"},"poi_id":"poi_f8a8b992","name":"B.M. Birla Planetarium","category":"Museum/Heritage"}
+{"_id":{"$oid":"68ad998806f2e30770720c76"},"poi_id":"poi_58d968b4","name":"Barbeque Nation","category":"Restaurant/Cafe"}
+{"_id":{"$oid":"68ad998806f2e30770720c7a"},"poi_id":"poi_e7fa4ba2","name":"Connemara Public Library","category":"Library/Educational"}
+{"_id":{"$oid":"68ad998806f2e30770720c81"},"poi_id":"poi_d160c9c7","name":"Dakshina Chitra Heritage Museum","category":"Museum/Heritage"}
+{"_id":{"$oid":"68ad998806f2e30770720c87"},"poi_id":"poi_af6828f2","name":"MGR Memorial","category":"Attraction"}
+{"_id":{"$oid":"68ad998806f2e30770720c8e"},"poi_id":"poi_50ca9457","name":"ECR Beach","category":"Attraction"}
+{"_id":{"$oid":"68ad998806f2e30770720c91"},"poi_id":"poi_41ded4ca","name":"Express Avenue Mall","category":"Shopping/Mall"}
+{"_id":{"$oid":"68ad998806f2e30770720c97"},"poi_id":"poi_255c561c","name":"Government Museum Chennai ( Madras Museum )","category":"Museum/Heritage"}
+{"_id":{"$oid":"68ad998806f2e30770720c9e"},"poi_id":"poi_bc1e0bfe","name":"Guindy National Park","category":"Park"}
+{"_id":{"$oid":"68ad998806f2e30770720ca1"},"poi_id":"poi_d7ee9398","name":"Madhavaram Botanical Garden","category":"Park"}
+{"_id":{"$oid":"68ad998806f2e30770720ca6"},"poi_id":"poi_b0366d7d","name":"Marina Beach","category":"Attraction"}
+{"_id":{"$oid":"68ad998806f2e30770720cb4"},"poi_id":"poi_a79fe846","name":"Murugan Idli Shop ( T Nagar )","category":"Restaurant/Cafe"}
+{"_id":{"$oid":"68ad998806f2e30770720cb8"},"poi_id":"poi_bbaad496","name":"National Art Gallery, Egmore","category":"Museum/Heritage"}
+{"_id":{"$oid":"68ad998806f2e30770720cbd"},"poi_id":"poi_a388fabf","name":"Sangeetha Veg Restaurant","category":"Restaurant/Cafe"}
+{"_id":{"$oid":"68ad998806f2e30770720cc2"},"poi_id":"poi_013d286e","name":"Santhome Cathedral Basilica","category":"Religious"}
+{"_id":{"$oid":"68ad998906f2e30770720cc9"},"poi_id":"poi_9f61d018","name":"Saravana Stores","category":"Shopping/Mall"}
+{"_id":{"$oid":"68ad998906f2e30770720cce"},"poi_id":"poi_8564efaf","name":"Semmozhi Poonga","category":"Park"}
+{"_id":{"$oid":"68ad998906f2e30770720cd2"},"poi_id":"poi_06600a21","name":"Snow Kingdom","category":"Amusement Park"}
+{"_id":{"$oid":"68ad998906f2e30770720cd5"},"poi_id":"poi_0e6ed6b7","name":"Spencer Plaza","category":"Shopping/Mall"}
+{"_id":{"$oid":"68ad998906f2e30770720cdb"},"poi_id":"poi_01903253","name":"Sri Parthasarathy Temple","category":"Religious"}
+{"_id":{"$oid":"68ad998906f2e30770720ce2"},"poi_id":"poi_3df4bf61","name":"Thousand Lights Mosque","category":"Religious"}
+{"_id":{"$oid":"68ad998906f2e30770720ce9"},"poi_id":"poi_ebfdd27f","name":"T Nagar Market","category":"Shopping/Mall"}
+{"_id":{"$oid":"68ad998906f2e30770720cef"},"poi_id":"poi_5dc68a78","name":"Phoenix Marketcity Mall","category":"Shopping/Mall"}
+{"_id":{"$oid":"68ad998906f2e30770720cf5"},"poi_id":"poi_29adcf8a","name":"VGP Universal Kingdom","category":"Amusement Park"}
+{"_id":{"$oid":"68ad9e410bb97d700a625d11"},"poi_id":"poi_59c2b23e","name":"ISKCON Chennai","category":"Religious"}
+{"_id":{"$oid":"68ad9e410bb97d700a625d44"},"poi_id":"poi_c414bd1f","name":"Annai Velankanni Shrine/Church","category":"Religious"}
+{"_id":{"$oid":"68ad9e410bb97d700a625d85"},"poi_id":"poi_4b6c5e2e","name":"Sri Dhenupureeswarar Temple","category":"Religious"}
+{"_id":{"$oid":"68ad9e410bb97d700a625d9b"},"poi_id":"poi_fb79f29a","name":"Nithya Kalyana Perumal Temple","category":"Religious"}
+{"_id":{"$oid":"68ad9e410bb97d700a625dba"},"poi_id":"poi_c09a7b25","name":"Government Museum Chennai","category":"Museum/Heritage"}
+{"_id":{"$oid":"68ad9e410bb97d700a625ded"},"poi_id":"poi_aa8cd5d4","name":"Vandalur Zoo (Arignar Anna Zoological Park)","category":"Attraction"}
+{"_id":{"$oid":"68ad9e410bb97d700a625e20"},"poi_id":"poi_33bc3b9a","name":"Shri Aadhipureeswarar Temple","category":"Religious"}
+{"_id":{"$oid":"68ad9e410bb97d700a625e25"},"poi_id":"poi_ad8ce9c6","name":"Sri Ramakrishna Math Chennai","category":"Religious"}
+{"_id":{"$oid":"68ad9e410bb97d700a625e36"},"poi_id":"poi_d1320793","name":"The Madras Crocodile Bank Trust and Centre for Herpetology","category":"Attraction"}
+{"_id":{"$oid":"68ad9e420bb97d700a625e69"},"poi_id":"poi_5b48a78b","name":"Arulmigu Thelliyasinga Perumal Temple","category":"Religious"}
+{"_id":{"$oid":"68ad9e420bb97d700a625e9c"},"poi_id":"poi_8d768e92","name":"Arulmigu Gangadeeswarar Koil","category":"Religious"}
+{"_id":{"$oid":"68ad9e420bb97d700a625ea4"},"poi_id":"poi_7f320cc4","name":"Madras High Court","category":"Other"}
+{"_id":{"$oid":"68ad9e420bb97d700a625eb4"},"poi_id":"poi_fdac272b","name":"Kalikambal Kamadeswarar Temple","category":"Religious"}
+{"_id":{"$oid":"68ad9e420bb97d700a625ee7"},"poi_id":"poi_f7306cea","name":"Anna Nagar Ayyappa Temple","category":"Religious"}
+{"_id":{"$oid":"68ad9e420bb97d700a625f1d"},"poi_id":"poi_99c5603d","name":"Chennai Snake Park","category":"Attraction"}
+{"_id":{"$oid":"68ad9e420bb97d700a625f50"},"poi_id":"poi_c803f41a","name":"Nanganallur Anjaneyar Temple","category":"Religious"}
+{"_id":{"$oid":"68ad9e420bb97d700a625f92"},"poi_id":"poi_21d2adb5","name":"Queensland Amusement Park","category":"Amusement Park"}
+{"_id":{"$oid":"68ad9e420bb97d700a625fc5"},"poi_id":"poi_05d1be2c","name":"Shri Ashtalakshmi Temple","category":"Religious"}
+{"_id":{"$oid":"68ad9e430bb97d700a62605c"},"poi_id":"poi_783c7d83","name":"Vallakottai Murugan Temple","category":"Religious"}
+{"_id":{"$oid":"68ad9e430bb97d700a626075"},"poi_id":"poi_5dacfbe0","name":"Chennai Lighthouse","category":"Museum/Heritage"}
+{"_id":{"$oid":"68ad9e430bb97d700a6260a8"},"poi_id":"poi_bc2d5e2e","name":"Arupadai Veedu Murugan Temple","category":"Religious"}
+{"_id":{"$oid":"68ad9e430bb97d700a62613f"},"poi_id":"poi_bfaa4554","name":"The Theosophical Society","category":"Library/Educational"}
+{"_id":{"$oid":"68ad9e430bb97d700a6261a4"},"poi_id":"poi_f13935e4","name":"The Adyar Library and Research Centre","category":"Library/Educational"}
+{"_id":{"$oid":"68ad9e430bb97d700a6261ac"},"poi_id":"poi_17ba2e39","name":"Pondy Bazaar","category":"Shopping/Mall"}
+{"_id":{"$oid":"68ad9e430bb97d700a6261b7"},"poi_id":"poi_c7e88309","name":"MGM Dizzie World","category":"Amusement Park"}
+{"_id":{"$oid":"68c25a1c420379f6591c2ba5"},"poi_id":"poi_9ef21f54","name":"The Accord Metropolitan","category":"Hotel"}
+{"_id":{"$oid":"68c25a1c420379f6591c2ba6"},"poi_id":"poi_b5ee80a0","name":"Grand Chennai by GRT Hotels","category":"Hotel"}
+{"_id":{"$oid":"68c25a1c420379f6591c2ba8"},"poi_id":"poi_f7c0d0e7","name":"New Woodlands Hotel","category":"Hotel"}
+{"_id":{"$oid":"68c25a1c420379f6591c2ba9"},"poi_id":"poi_d852ed9f","name":"Benjarong - Thai Restaurant","category":"Restaurant/Cafe"}
+{"_id":{"$oid":"68c25a1c420379f6591c2baa"},"poi_id":"poi_e47635af","name":"Hotel Gokulam Park","category":"Hotel"}
+{"_id":{"$oid":"68c25a1c420379f6591c2bab"},"poi_id":"poi_37f6bcd9","name":"Cafe Coffee Day","category":"Restaurant/Cafe"}
+{"_id":{"$oid":"68c25a1c420379f6591c2bac"},"poi_id":"poi_8a55669c","name":"Sorgam @ Crimson Chakra","category":"Restaurant/Cafe"}
+{"_id":{"$oid":"68c25a1c420379f6591c2bad"},"poi_id":"poi_823527df","name":"Hudson","category":"Other"}
+{"_id":{"$oid":"68c25a1c420379f6591c2baf"},"poi_id":"poi_a4552f83","name":"Adyar Ananda Bhavan A2B","category":"Restaurant/Cafe"}
+{"_id":{"$oid":"68c25a1c420379f6591c2bb0"},"poi_id":"poi_945c3a6b","name":"Cream Centre - Nungambakkam","category":"Restaurant/Cafe"}
+{"_id":{"$oid":"68c25a1c420379f6591c2bb1"},"poi_id":"poi_592e1f54","name":"10 Downing Street - T Nagar","category":"Other"}
+{"_id":{"$oid":"68c25a1c420379f6591c2bb2"},"poi_id":"poi_dc13b139","name":"Subway","category":"Restaurant/Cafe"}
+{"_id":{"$oid":"68c25a1c420379f6591c2bb3"},"poi_id":"poi_cef5c7eb","name":"The Pride Hotel, Chennai","category":"Hotel"}
+{"_id":{"$oid":"68c25a1c420379f6591c2bb4"},"poi_id":"poi_083c69ec","name":"Park Avenue Hotel, Chennai","category":"Hotel"}
+{"_id":{"$oid":"68c25a1c420379f6591c2bb5"},"poi_id":"poi_979e7809","name":"Maple Tree Hotels","category":"Hotel"}
+{"_id":{"$oid":"68c25a1c420379f6591c2bb6"},"poi_id":"poi_77c0761c","name":"Hotel Raaj Bhaavan","category":"Hotel"}
+{"_id":{"$oid":"68c25a1c420379f6591c2bb8"},"poi_id":"poi_023241f1","name":"Hotel Saravana Bhavan","category":"Restaurant/Cafe"}
+{"_id":{"$oid":"68c25a1c420379f6591c2bb9"},"poi_id":"poi_1aa11302","name":"Tuscana Pizzeria at Wallace Garden","category":"Restaurant/Cafe"}
+{"_id":{"$oid":"68c25a1c420379f6591c2bbb"},"poi_id":"poi_af20aa9d","name":"Hotel Blue Diamond","category":"Hotel"}
+{"_id":{"$oid":"68c25a1c420379f6591c2bbc"},"poi_id":"poi_34e2e2df","name":"Kumarakom The Restaurant","category":"Restaurant/Cafe"}
+{"_id":{"$oid":"68c25a1c420379f6591c2bbd"},"poi_id":"poi_5010e0f6","name":"McDonald's","category":"Restaurant/Cafe"}
+{"_id":{"$oid":"68c25a1c420379f6591c2bbe"},"poi_id":"poi_88fcbcc3","name":"Dahlia Restaurant","category":"Restaurant/Cafe"}
+{"_id":{"$oid":"68c25a1c420379f6591c2bbf"},"poi_id":"poi_8acbb1c1","name":"Fruit Shop on Greams Road","category":"Shopping/Mall"}
+{"_id":{"$oid":"68c25a1c420379f6591c2bc0"},"poi_id":"poi_ae42e9d0","name":"Marina Inn","category":"Hotel"}
+{"_id":{"$oid":"68c25a1c420379f6591c2bc1"},"poi_id":"poi_6feabb85","name":"KFC","category":"Restaurant/Cafe"}
+{"_id":{"$oid":"68c25a1c420379f6591c2bc2"},"poi_id":"poi_ba5fad76","name":"Amaravathi Restaurant","category":"Restaurant/Cafe"}
+{"_id":{"$oid":"68c25a1c420379f6591c2bc3"},"poi_id":"poi_d236b055","name":"Shri Rajasthani Dhaba Restaurant","category":"Restaurant/Cafe"}
+{"_id":{"$oid":"68c25a1c420379f6591c2bc4"},"poi_id":"poi_0a1923a1","name":"China Town","category":"Shopping/Mall"}
+{"_id":{"$oid":"68c25a1c420379f6591c2bc5"},"poi_id":"poi_54825dca","name":"Amma Chettinadu Restaurant","category":"Restaurant/Cafe"}
+{"_id":{"$oid":"68c25a1c420379f6591c2bc6"},"poi_id":"poi_83ebc780","name":"Pizza Hut - RK Salai, Chennai","category":"Restaurant/Cafe"}
+{"_id":{"$oid":"68c25a1c420379f6591c2bc7"},"poi_id":"poi_b5fb3906","name":"Kings Hotel - Egmore","category":"Hotel"}
+{"_id":{"$oid":"68c25a1c420379f6591c2bc8"},"poi_id":"poi_8b4719b4","name":"Ente Keralam - Anna Nagar","category":"Restaurant/Cafe"}
+{"_id":{"$oid":"68c25a1c420379f6591c2bc9"},"poi_id":"poi_4a27f028","name":"Hot Chips Veg Restaurant","category":"Restaurant/Cafe"}
+{"_id":{"$oid":"68c25a1c420379f6591c2bca"},"poi_id":"poi_3a47a58a","name":"Palmshore Santhome","category":"Restaurant/Cafe"}
+{"_id":{"$oid":"68c25a1c420379f6591c2bcb"},"poi_id":"poi_2ba0dcf6","name":"Azzuri Bay","category":"Other"}
+{"_id":{"$oid":"68c25a1c420379f6591c2bcc"},"poi_id":"poi_d6b39ad3","name":"Mathsya Tnagar","category":"Other"}
+{"_id":{"$oid":"68c25a1c420379f6591c2bcd"},"poi_id":"poi_de785a73","name":"Domino's Pizza - T. Nagar, Chennai","category":"Restaurant/Cafe"}
+{"_id":{"$oid":"68c25a1c420379f6591c2bce"},"poi_id":"poi_0b16b70f","name":"Chef Express","category":"Restaurant/Cafe"}
+{"_id":{"$oid":"68c25a1c420379f6591c2bcf"},"poi_id":"poi_65b70dfc","name":"Hotel Murudis","category":"Hotel"}
+{"_id":{"$oid":"68c25a1c420379f6591c2bd0"},"poi_id":"poi_64267636","name":"Eatalica","category":"Restaurant/Cafe"}
+{"_id":{"$oid":"68c25a1c420379f6591c2bd1"},"poi_id":"poi_882c61bb","name":"Domino's Pizza - Kilpauk, Chennai","category":"Restaurant/Cafe"}
+{"_id":{"$oid":"68c25a1c420379f6591c2bd2"},"poi_id":"poi_89812aee","name":"Salt and Pepper","category":"Restaurant/Cafe"}
+{"_id":{"$oid":"68c25a1c420379f6591c2bd3"},"poi_id":"poi_d6f964db","name":"Nair Mess","category":"Restaurant/Cafe"}
+{"_id":{"$oid":"68c25a1c420379f6591c2bd4"},"poi_id":"poi_6a376973","name":"Hotel Paramount","category":"Hotel"}
+{"_id":{"$oid":"68c25a1c420379f6591c2bd5"},"poi_id":"poi_d3a356a9","name":"Hotel Maris","category":"Hotel"}
+{"_id":{"$oid":"68c25a1c420379f6591c2bd6"},"poi_id":"poi_4409e76a","name":"Gangotree","category":"Religious"}
+{"_id":{"$oid":"68c25a1c420379f6591c2bd7"},"poi_id":"poi_b9c876e8","name":"Sri Utthara Guruvayoorappan Temple","category":"Religious"}
+{"_id":{"$oid":"68c25a1c420379f6591c2bd8"},"poi_id":"poi_6a9dd627","name":"Sri Prathyangira Devi Temple","category":"Religious"}
+{"_id":{"$oid":"68c25a1c420379f6591c2bda"},"poi_id":"poi_ccaf863f","name":"Kart Attack","category":"Amusement Park"}
+{"_id":{"$oid":"68c25a1c420379f6591c2bdb"},"poi_id":"poi_6c166fd6","name":"Arignar Anna Zoological Park","category":"Attraction"}
+{"_id":{"$oid":"68c25a1c420379f6591c2bdc"},"poi_id":"poi_648f2ce1","name":"Ellaiamman Kovil","category":"Religious"}
+{"_id":{"$oid":"68c25a1c420379f6591c2bdd"},"poi_id":"poi_8245a8b3","name":"Karl Schmidt Memorial","category":"Attraction"}
+{"_id":{"$oid":"68c25a1c420379f6591c2bde"},"poi_id":"poi_5b818aa9","name":"Arulmigu Sowmya Damodara Perumal Koil","category":"Religious"}
+{"_id":{"$oid":"68c25a1c420379f6591c2bdf"},"poi_id":"poi_ef75f3bf","name":"Murugan Temple (Sri Subbiramaniya Swami Thirukovil)","category":"Religious"}
+{"_id":{"$oid":"68c25a1c420379f6591c2be0"},"poi_id":"poi_495d1a14","name":"Bay of Life Surf School & Ocean Literacy","category":"Other"}
+{"_id":{"$oid":"68c25a1c420379f6591c2be1"},"poi_id":"poi_cf467fc9","name":"Om Gangaiamman Temple","category":"Religious"}
+{"_id":{"$oid":"68c25a1c420379f6591c2be2"},"poi_id":"poi_b9710156","name":"Sitharkadu Sivan Temple","category":"Religious"}
+{"_id":{"$oid":"68c25a1c420379f6591c2be3"},"poi_id":"poi_71d1168a","name":"Sri Ranganatha Perumal, Devadhanam","category":"Religious"}
+{"_id":{"$oid":"68c25a1c420379f6591c2be4"},"poi_id":"poi_a3b16526","name":"Sri Munisuvarat Swami Jain Temple","category":"Religious"}
+{"_id":{"$oid":"68c25a1c420379f6591c2be5"},"poi_id":"poi_77ce1662","name":"Kotturpuram Tree Park","category":"Park"}
+{"_id":{"$oid":"68c25a1c420379f6591c2be6"},"poi_id":"poi_9b24dba4","name":"Sri Kandaswamy Temple","category":"Religious"}
+{"_id":{"$oid":"68c25a1c420379f6591c2be7"},"poi_id":"poi_c2c561aa","name":"A Cube","category":"Other"}
+{"_id":{"$oid":"68c25a1c420379f6591c2be8"},"poi_id":"poi_6f9d7e4e","name":"Rock Point","category":"Other"}
+{"_id":{"$oid":"68c25a1c420379f6591c2be9"},"poi_id":"poi_a70e0e6e","name":"Puratchi Thalaivi Dr. J. Jayalalithaa Memorial","category":"Attraction"}
+{"_id":{"$oid":"68c25a1c420379f6591c2bea"},"poi_id":"poi_8ee9c740","name":"Ramanujan Museum & Math Education Centre","category":"Museum/Heritage"}
+{"_id":{"$oid":"68c25a1c420379f6591c2beb"},"poi_id":"poi_9f59da59","name":"Mangalam Travel & Tours - Alwarpet","category":"Other"}
+{"_id":{"$oid":"68c25a1c420379f6591c2bed"},"poi_id":"poi_af1e0eda","name":"Sri Adikesava Perumal Peyalwar Temple","category":"Religious"}
+{"_id":{"$oid":"68c25a1c420379f6591c2bee"},"poi_id":"poi_ab830e9c","name":"Chennai Corporation Park & Playground","category":"Park"}
+{"_id":{"$oid":"68c25a1c420379f6591c2bef"},"poi_id":"poi_61ac06bb","name":"Sri Ayyappan Temple, Sri Ayyappa Jothi Baktha Jana Sabha","category":"Religious"}
+{"_id":{"$oid":"68c25a1c420379f6591c2bf0"},"poi_id":"poi_ce67e169","name":"Arulmigu Thiyagarajaswamy Temple","category":"Religious"}
+{"_id":{"$oid":"68c25a1c420379f6591c2bf1"},"poi_id":"poi_c51b808d","name":"Sri Mahalingeswarar Temple","category":"Religious"}
+{"_id":{"$oid":"68c25a1c420379f6591c2bf2"},"poi_id":"poi_876b7866","name":"Sri Kamakshi Amman Temple Mangadu","category":"Religious"}
+{"_id":{"$oid":"68c25a1c420379f6591c2bf3"},"poi_id":"poi_13286e2f","name":"Vandalur Reserve Forest Area","category":"Park"}
+{"_id":{"$oid":"68c25a1c420379f6591c2bf4"},"poi_id":"poi_0246c2d4","name":"Nellivanadevi","category":"Religious"}
+{"_id":{"$oid":"68c25a1c420379f6591c2bf5"},"poi_id":"poi_3fc830a5","name":"Semmozhi Poonga - Chennai, Tamilnadu","category":"Park"}
+{"_id":{"$oid":"68c25a1c420379f6591c2bf6"},"poi_id":"poi_bb540f48","name":"Muthumari Amman Kovil","category":"Religious"}
+{"_id":{"$oid":"68c25a1c420379f6591c2bf7"},"poi_id":"poi_43025f39","name":"Sri Lakshmi Kuberar Temple","category":"Religious"}
+{"_id":{"$oid":"68c25a1c420379f6591c2bf8"},"poi_id":"poi_f89810d0","name":"Floral Park","category":"Other"}
+{"_id":{"$oid":"68c25a1c420379f6591c2bf9"},"poi_id":"poi_4d550fe9","name":"T S Fidaally & Co","category":"Other"}
+{"_id":{"$oid":"68c25a1c420379f6591c2bfa"},"poi_id":"poi_0adc4b50","name":"Chennai Corporation Island Park","category":"Park"}
+{"_id":{"$oid":"68c25a1c420379f6591c2bfb"},"poi_id":"poi_6367b49c","name":"Chennai Corporation Thirumalai Park","category":"Park"}
+{"_id":{"$oid":"68c25a1d420379f6591c2bfc"},"poi_id":"poi_777d9eae","name":"Chennai Corporation Jermaiyah Park","category":"Park"}
+{"_id":{"$oid":"68c25a1d420379f6591c2bfd"},"poi_id":"poi_bf9df68d","name":"Spice Gardens Food Court","category":"Restaurant/Cafe"}
+{"_id":{"$oid":"68c25a1d420379f6591c2bfe"},"poi_id":"poi_3e4adf2d","name":"LaKrishi Organics - Neem Based Fertilizers","category":"Shopping/Mall"}
+{"_id":{"$oid":"68c25a1d420379f6591c2c00"},"poi_id":"poi_26f78dae","name":"Corporation Park","category":"Park"}
+{"_id":{"$oid":"68c25a1d420379f6591c2c01"},"poi_id":"poi_5fbcfcbe","name":"Chennai Corporation Park - Metal Factory Road","category":"Park"}
+{"_id":{"$oid":"68c25a1d420379f6591c2c02"},"poi_id":"poi_59a3bc45","name":"VOC Nagar Park","category":"Park"}
+{"_id":{"$oid":"68c25a1d420379f6591c2c03"},"poi_id":"poi_b279afe6","name":"Subhas Scout Group","category":"Other"}
+{"_id":{"$oid":"68c25a1d420379f6591c2c04"},"poi_id":"poi_cbd23833","name":"Park Town Benefit Fund Limited","category":"Other"}
+{"_id":{"$oid":"68c25a1d420379f6591c2c05"},"poi_id":"poi_a7d766fd","name":"PRASANNA NURSERY GARDEN","category":"Park"}
+{"_id":{"$oid":"68c25a1d420379f6591c2c06"},"poi_id":"poi_11393d55","name":"Golden Family Health Care","category":"Other"}
+{"_id":{"$oid":"68c25a1d420379f6591c2c07"},"poi_id":"poi_a4eea1e5","name":"Dharmambal Corporation Park","category":"Park"}
+{"_id":{"$oid":"68c25a1d420379f6591c2c08"},"poi_id":"poi_f548b184","name":"LICKO PARK","category":"Park"}
+{"_id":{"$oid":"68c25a1d420379f6591c2c09"},"poi_id":"poi_56dfac68","name":"Tiru Vi Ka Street Park","category":"Park"}
+{"_id":{"$oid":"68c25a1d420379f6591c2c0a"},"poi_id":"poi_e9dc6cb7","name":"Our Lady of Good Health School","category":"Other"}
+{"_id":{"$oid":"68c25a1d420379f6591c2c0b"},"poi_id":"poi_83d54f86","name":"Bharathidasan Park","category":"Park"}
+{"_id":{"$oid":"68c25a1d420379f6591c2c0c"},"poi_id":"poi_c7987c8f","name":"CPWD Quarters Park","category":"Park"}
+{"_id":{"$oid":"68c25a1d420379f6591c2c0d"},"poi_id":"poi_bdfa1fc1","name":"Perunthalaivar K.Kamaraj Memorial - Chennai, Tamilnadu","category":"Attraction"}
+{"_id":{"$oid":"68c25a1d420379f6591c2c0e"},"poi_id":"poi_b2be18e2","name":"Chennai Corporation 'I' Block Park","category":"Park"}
+{"_id":{"$oid":"68c25a1d420379f6591c2c0f"},"poi_id":"poi_3fa009c4","name":"Terrace Park","category":"Park"}
+{"_id":{"$oid":"68c25a1d420379f6591c2c10"},"poi_id":"poi_b8de4be7","name":"Ring Road Park","category":"Park"}
+{"_id":{"$oid":"68c25a1d420379f6591c2c11"},"poi_id":"poi_d9c4357e","name":"Keep Earth Green","category":"Park"}
+{"_id":{"$oid":"68c25a1d420379f6591c2c12"},"poi_id":"poi_d1eb4dca","name":"Startrak Wireless Technologies Pvt Ltd","category":"Other"}
+{"_id":{"$oid":"68c25a1d420379f6591c2c13"},"poi_id":"poi_db403658","name":"Anna Walkers Park","category":"Park"}
+{"_id":{"$oid":"68c25a1d420379f6591c2c14"},"poi_id":"poi_7bd09477","name":"Dr.M.G.R. and Dr.J.Jayalalitha Memorial","category":"Attraction"}
+{"_id":{"$oid":"68c25a1d420379f6591c2c15"},"poi_id":"poi_ccf6a3a1","name":"Siva Maya Creations (P) Ltd.","category":"Other"}
+{"_id":{"$oid":"68c25a1d420379f6591c2c16"},"poi_id":"poi_96f82aee","name":"British Council","category":"Library/Educational"}
+{"_id":{"$oid":"68c25a1d420379f6591c2c17"},"poi_id":"poi_1a04b19b","name":"Easwari Lending Library","category":"Library/Educational"}
+{"_id":{"$oid":"68c25a1d420379f6591c2c18"},"poi_id":"poi_2eee936a","name":"Kannapar Nagar District Branch Library","category":"Library/Educational"}
+{"_id":{"$oid":"68c25a1d420379f6591c2c19"},"poi_id":"poi_efcf78dc","name":"The Tamil Nadu Dr. M.G.R. Medical University","category":"Library/Educational"}
+{"_id":{"$oid":"68c25a1d420379f6591c2c1a"},"poi_id":"poi_6a5835be","name":"Redbadge Online Library Pvt Ltd","category":"Library/Educational"}
+{"_id":{"$oid":"68c25a1d420379f6591c2c1b"},"poi_id":"poi_be9ec383","name":"TamilNadu Govt Library","category":"Library/Educational"}
+{"_id":{"$oid":"68c25a1d420379f6591c2c1c"},"poi_id":"poi_fd3f595d","name":"PAGES in touch","category":"Other"}
+{"_id":{"$oid":"68c25a1d420379f6591c2c1d"},"poi_id":"poi_68b5b644","name":"Rajeshwari Lending Library","category":"Library/Educational"}
+{"_id":{"$oid":"68c25a1d420379f6591c2c1e"},"poi_id":"poi_3d9a666c","name":"DEEDS AND DOCUMENTS","category":"Other"}
+{"_id":{"$oid":"68c25a1d420379f6591c2c1f"},"poi_id":"poi_87cfbbac","name":"Public Library","category":"Library/Educational"}
+{"_id":{"$oid":"68c25a1d420379f6591c2c20"},"poi_id":"poi_4a1d06df","name":"Manupatra Chennai","category":"Library/Educational"}
+{"_id":{"$oid":"68c25a1d420379f6591c2c21"},"poi_id":"poi_32627127","name":"Branch Library","category":"Library/Educational"}
+{"_id":{"$oid":"68c25a1d420379f6591c2c22"},"poi_id":"poi_09b7840c","name":"Raj Vidya Kender - Information Centre","category":"Other"}
+{"_id":{"$oid":"68c25a1d420379f6591c2c23"},"poi_id":"poi_032b97f8","name":"Muhammadan Public Library","category":"Library/Educational"}
+{"_id":{"$oid":"68c25a1d420379f6591c2c24"},"poi_id":"poi_78ba6909","name":"Madras University Library","category":"Library/Educational"}
+{"_id":{"$oid":"68c25a1d420379f6591c2c26"},"poi_id":"poi_962d5a0f","name":"Reading Circle For Children","category":"Library/Educational"}
+{"_id":{"$oid":"68c25a1d420379f6591c2c27"},"poi_id":"poi_828c7b45","name":"MVC Library","category":"Library/Educational"}
+{"_id":{"$oid":"68c25a1d420379f6591c2c28"},"poi_id":"poi_c0debcc3","name":"Islamic Public Library","category":"Library/Educational"}
+{"_id":{"$oid":"68c25a1d420379f6591c2c29"},"poi_id":"poi_aed5f4c8","name":"Maraimalai Adigal Library","category":"Library/Educational"}
+{"_id":{"$oid":"68c25a1d420379f6591c2c2a"},"poi_id":"poi_c4d2d880","name":"Madras District Branch Library","category":"Library/Educational"}
+{"_id":{"$oid":"68c25a1d420379f6591c2c2b"},"poi_id":"poi_4507b5c4","name":"GLOW WORM CLUB","category":"Bar/Pub"}
+{"_id":{"$oid":"68c25a1d420379f6591c2c2c"},"poi_id":"poi_910a7e74","name":"KMC Central Library","category":"Library/Educational"}
+{"_id":{"$oid":"68c25a1d420379f6591c2c2d"},"poi_id":"poi_5f16697b","name":"District Central Library","category":"Library/Educational"}
+{"_id":{"$oid":"68c25a1d420379f6591c2c2e"},"poi_id":"poi_60c223bc","name":"Corporation Library","category":"Library/Educational"}
+{"_id":{"$oid":"68c25a1d420379f6591c2c2f"},"poi_id":"poi_fda03556","name":"MV BOOK BANK","category":"Library/Educational"}
+{"_id":{"$oid":"68c25a1d420379f6591c2c30"},"poi_id":"poi_34295c02","name":"Borrow and Read","category":"Library/Educational"}
+{"_id":{"$oid":"68c25a1d420379f6591c2c31"},"poi_id":"poi_2f2e46c8","name":"SHREE SURGICALS","category":"Shopping/Mall"}
+{"_id":{"$oid":"68c25a1d420379f6591c2c32"},"poi_id":"poi_356fb179","name":"Luz House","category":"Other"}
+{"_id":{"$oid":"68c25a1d420379f6591c2c33"},"poi_id":"poi_bdb89694","name":"SNML-Sant Nirankari Mandal Library-Chennai Branch","category":"Library/Educational"}
+{"_id":{"$oid":"68c25a1d420379f6591c2c34"},"poi_id":"poi_7436f978","name":"Little Love Library","category":"Library/Educational"}
+{"_id":{"$oid":"68c25a1d420379f6591c2c35"},"poi_id":"poi_009b49bc","name":"Government Public Library","category":"Library/Educational"}
+{"_id":{"$oid":"68c25a1d420379f6591c2c36"},"poi_id":"poi_af47539d","name":"Sri Krishna Lending Library","category":"Library/Educational"}
+{"_id":{"$oid":"68c25a1d420379f6591c2c37"},"poi_id":"poi_b11b0b13","name":"JGVV Book Bank","category":"Library/Educational"}
+{"_id":{"$oid":"68c25a1d420379f6591c2c38"},"poi_id":"poi_2d955948","name":"SENTHIL LIBRARY","category":"Library/Educational"}
+{"_id":{"$oid":"68c25a1d420379f6591c2c39"},"poi_id":"poi_cf160189","name":"Chennai Corporation","category":"Other"}
+{"_id":{"$oid":"68c25a1d420379f6591c2c3a"},"poi_id":"poi_a477ff2a","name":"THAMARAI NOOLAGAM","category":"Library/Educational"}
+{"_id":{"$oid":"68c25a1d420379f6591c2c3b"},"poi_id":"poi_915f2652","name":"SUNDERRAJAN'S STUDY HALL/SPACE 003 - SUNDERRAJAN'S IAS ACADEMY","category":"Library/Educational"}
+{"_id":{"$oid":"68c25a1d420379f6591c2c3c"},"poi_id":"poi_9414d648","name":"Chennai Corporation Library","category":"Library/Educational"}
+{"_id":{"$oid":"68c25a1d420379f6591c2c3d"},"poi_id":"poi_f7a69a50","name":"Government Oriental Manuscript Library","category":"Library/Educational"}
+{"_id":{"$oid":"68c25a1d420379f6591c2c3e"},"poi_id":"poi_1e62fcb6","name":"Maruthi Lending Library","category":"Library/Educational"}
+{"_id":{"$oid":"68c25a1d420379f6591c2c3f"},"poi_id":"poi_3fa958be","name":"Little Spark Children's Library","category":"Library/Educational"}
+{"_id":{"$oid":"68c25a1d420379f6591c2c40"},"poi_id":"poi_43e3bcd6","name":"The I Love Read Library","category":"Library/Educational"}
+{"_id":{"$oid":"68c25a1d420379f6591c2c41"},"poi_id":"poi_0fc42c99","name":"Sishya Library","category":"Library/Educational"}
+{"_id":{"$oid":"68c25a1d420379f6591c2c42"},"poi_id":"poi_262cd1dd","name":"Government Library, Thiruvottiyur Branch","category":"Library/Educational"}
+{"_id":{"$oid":"68c25a1d420379f6591c2c43"},"poi_id":"poi_f5dcd2d2","name":"Chetpet","category":"Other"}
+{"_id":{"$oid":"68c25a1d420379f6591c2c44"},"poi_id":"poi_2c5f4d2b","name":"Banyan Children Library","category":"Library/Educational"}
+{"_id":{"$oid":"68c25a1d420379f6591c2c45"},"poi_id":"poi_2d28acdb","name":"Joola library","category":"Library/Educational"}
+{"_id":{"$oid":"68c25a1d420379f6591c2c46"},"poi_id":"poi_2379f1be","name":"Government Branch Library Vepery","category":"Library/Educational"}
+{"_id":{"$oid":"68c25a1d420379f6591c2c47"},"poi_id":"poi_d7824057","name":"Chennai Book Park","category":"Library/Educational"}
+{"_id":{"$oid":"68c25a1d420379f6591c2c48"},"poi_id":"poi_35ceb31a","name":"MMC CENTRAL LIBRARY","category":"Library/Educational"}
+{"_id":{"$oid":"68c25a1d420379f6591c2c49"},"poi_id":"poi_608d3db9","name":"Chennai Mavatta Noolaga Anaikulu Kilai Noolagam","category":"Library/Educational"}
+{"_id":{"$oid":"68c25a1d420379f6591c2c4a"},"poi_id":"poi_88814dff","name":"Chintadripet Library","category":"Library/Educational"}
+{"_id":{"$oid":"68c25de834cec8f79ad03fee"},"poi_id":"poi_a673986a","name":"Novotel Chennai Sipcot","category":"Hotel"}
+{"_id":{"$oid":"68c25de834cec8f79ad03fef"},"poi_id":"poi_392a8ed3","name":"Aloft Chennai Omr It Expressway","category":"Hotel"}
+{"_id":{"$oid":"68c25de834cec8f79ad03ff0"},"poi_id":"poi_d76f1cd4","name":"Hotel Ibis Chennai Sipcot","category":"Hotel"}
+{"_id":{"$oid":"68c25de834cec8f79ad03ff1"},"poi_id":"poi_c633451d","name":"Jp Hotel","category":"Hotel"}
+{"_id":{"$oid":"68c25de834cec8f79ad03ff2"},"poi_id":"poi_b245fa57","name":"Fortune Select Grand","category":"Hotel"}
+{"_id":{"$oid":"68c25de834cec8f79ad03ff4"},"poi_id":"poi_f903ce49","name":"Quality Inn Sabari","category":"Hotel"}
+{"_id":{"$oid":"68c25de834cec8f79ad03ff5"},"poi_id":"poi_3dc0278d","name":"The Spring Hotel","category":"Hotel"}
+{"_id":{"$oid":"68c25de834cec8f79ad03ff6"},"poi_id":"poi_4c14cf61","name":"Hotel Mallika Residency","category":"Hotel"}
+{"_id":{"$oid":"68c25de834cec8f79ad03ff8"},"poi_id":"poi_f2e3ce6c","name":"Park Plaza Chennai Omr","category":"Hotel"}
+{"_id":{"$oid":"68c25de834cec8f79ad03ff9"},"poi_id":"poi_2f1ea487","name":"Somerset Greenways Chennai","category":"Hotel"}
+{"_id":{"$oid":"68c25de834cec8f79ad03ffa"},"poi_id":"poi_ea8c578e","name":"La Woods Hotel","category":"Hotel"}
+{"_id":{"$oid":"68c25de834cec8f79ad03ffc"},"poi_id":"poi_ac903f25","name":"Ginger Chennai Taramani Iitm","category":"Hotel"}
+{"_id":{"$oid":"68c25de834cec8f79ad03ffe"},"poi_id":"poi_48a9fdfa","name":"Design Hotel Chennai By Justa","category":"Hotel"}
+{"_id":{"$oid":"68c25de834cec8f79ad03fff"},"poi_id":"poi_a1a2c517","name":"Turyaa Chennai","category":"Hotel"}
+{"_id":{"$oid":"68c25de834cec8f79ad04000"},"poi_id":"poi_65d2073e","name":"Gokulam Park Sabari Omr","category":"Hotel"}
+{"_id":{"$oid":"68c25de834cec8f79ad04001"},"poi_id":"poi_f8bd71fb","name":"Holiday Inn Chennai Omr It Expressway","category":"Hotel"}
+{"_id":{"$oid":"68c25de834cec8f79ad04002"},"poi_id":"poi_a2b45794","name":"Regenta Central Deccan","category":"Hotel"}
+{"_id":{"$oid":"68c25de834cec8f79ad04003"},"poi_id":"poi_f43defca","name":"Pleasant Stay Guest House","category":"Hotel"}
+{"_id":{"$oid":"68c25de834cec8f79ad04004"},"poi_id":"poi_f53ce684","name":"Keys Hotel Katti Ma Chennai","category":"Hotel"}
+{"_id":{"$oid":"68c25de834cec8f79ad04005"},"poi_id":"poi_0b34894a","name":"Ambassador Pallava Chennai","category":"Hotel"}
+{"_id":{"$oid":"68c25de834cec8f79ad04006"},"poi_id":"poi_298148a0","name":"Raj Park Chennai","category":"Hotel"}
+{"_id":{"$oid":"68c25de834cec8f79ad04007"},"poi_id":"poi_ec868466","name":"Radisson Blu Hotel Grt Chennai","category":"Hotel"}
+{"_id":{"$oid":"68c25de834cec8f79ad04008"},"poi_id":"poi_00cdff40","name":"Palmgrove Hotel","category":"Hotel"}
+{"_id":{"$oid":"68c25de834cec8f79ad04009"},"poi_id":"poi_37d4fae2","name":"Pratap Plaza Hotel","category":"Hotel"}
+{"_id":{"$oid":"68c25de834cec8f79ad0400a"},"poi_id":"poi_f409b96c","name":"Hotel Mars","category":"Hotel"}
+{"_id":{"$oid":"68c25de834cec8f79ad0400b"},"poi_id":"poi_94ee3f52","name":"Mgm Eastwoods","category":"Shopping/Mall"}
+{"_id":{"$oid":"68c25de834cec8f79ad0400c"},"poi_id":"poi_50b36f6e","name":"Srm Hotel","category":"Hotel"}
+{"_id":{"$oid":"68c25de834cec8f79ad0400d"},"poi_id":"poi_1ff9ed94","name":"The Mount Manor","category":"Hotel"}
+{"_id":{"$oid":"68c25de834cec8f79ad0400e"},"poi_id":"poi_c4d8b538","name":"Hotel Royal Plaza","category":"Hotel"}
+{"_id":{"$oid":"68c25de834cec8f79ad0400f"},"poi_id":"poi_4ad0edf2","name":"Citadines Omr Chennai","category":"Hotel"}
+{"_id":{"$oid":"68c25de834cec8f79ad04011"},"poi_id":"poi_a714b0c9","name":"Bkr Grand Hotel","category":"Hotel"}
+{"_id":{"$oid":"68c25de834cec8f79ad04012"},"poi_id":"poi_58a4311b","name":"The Vijay Park Hotel Chennai","category":"Hotel"}
+{"_id":{"$oid":"68c25de834cec8f79ad04013"},"poi_id":"poi_d73d749c","name":"Ambica Empire","category":"Hotel"}
+{"_id":{"$oid":"68c25de834cec8f79ad04014"},"poi_id":"poi_859d91fa","name":"Ywca International Guest House","category":"Hotel"}
+{"_id":{"$oid":"68c25de834cec8f79ad04015"},"poi_id":"poi_609ce13e","name":"Nk Grand Park Hotel","category":"Hotel"}
+{"_id":{"$oid":"68c25de834cec8f79ad04016"},"poi_id":"poi_b153a3a7","name":"Bell Hotel Chennai","category":"Hotel"}
+{"_id":{"$oid":"68c25de834cec8f79ad04017"},"poi_id":"poi_2feea585","name":"The Lotus Apartment Hotel Burkit Road","category":"Hotel"}
+{"_id":{"$oid":"68c25de834cec8f79ad04018"},"poi_id":"poi_a55b2942","name":"The Iris Hotel","category":"Hotel"}
+{"_id":{"$oid":"68c25de834cec8f79ad04019"},"poi_id":"poi_091cbffa","name":"Raj Residency","category":"Hotel"}
+{"_id":{"$oid":"68c25de834cec8f79ad0401a"},"poi_id":"poi_bc0b76c8","name":"Quality Inn Airport","category":"Hotel"}
+{"_id":{"$oid":"68c25de834cec8f79ad0401b"},"poi_id":"poi_0e4e71b2","name":"Hotel Ammu Palace Budget Hotel","category":"Hotel"}
+{"_id":{"$oid":"68c25de834cec8f79ad0401c"},"poi_id":"poi_f8de8289","name":"Hotel Chandra Park","category":"Hotel"}
+{"_id":{"$oid":"68c25de834cec8f79ad0401d"},"poi_id":"poi_7de7c28a","name":"Ibis Chennai Omr","category":"Hotel"}
+{"_id":{"$oid":"68c25de834cec8f79ad0401e"},"poi_id":"poi_71af1805","name":"Mount Kailash Suites","category":"Hotel"}
+{"_id":{"$oid":"68c25de834cec8f79ad0401f"},"poi_id":"poi_eeaa01fe","name":"Holiday Inn Express Chennai Old Mahabalipuram Road","category":"Hotel"}
+{"_id":{"$oid":"68c25de834cec8f79ad04020"},"poi_id":"poi_ed0e3cea","name":"Novotel Chennai Omr Hotel","category":"Hotel"}
+{"_id":{"$oid":"68c25de834cec8f79ad04021"},"poi_id":"poi_5aa0c042","name":"Zone By The Park Orr Chennai","category":"Hotel"}
+{"_id":{"$oid":"68c25de834cec8f79ad04022"},"poi_id":"poi_23f1f78c","name":"Kek Accommodation","category":"Hotel"}
+{"_id":{"$oid":"68c25de834cec8f79ad04023"},"poi_id":"poi_4ac1f811","name":"Holiday Inn Express Chennai Omr Thoraipakkam","category":"Hotel"}
+{"_id":{"$oid":"68c25de834cec8f79ad04024"},"poi_id":"poi_2d6ddf66","name":"The Centrepoint","category":"Shopping/Mall"}
+{"_id":{"$oid":"68c25de834cec8f79ad04025"},"poi_id":"poi_3485800a","name":"The Checkers Hotel","category":"Hotel"}
+{"_id":{"$oid":"68c25de834cec8f79ad04026"},"poi_id":"poi_2e1c97bc","name":"Avenue 11","category":"Other"}
+{"_id":{"$oid":"68c25de834cec8f79ad04027"},"poi_id":"poi_2a61db8c","name":"Mahalaya Residency","category":"Hotel"}
+{"_id":{"$oid":"68c25de834cec8f79ad04028"},"poi_id":"poi_11cc8271","name":"Ramada Plaza Chennai","category":"Hotel"}
+{"_id":{"$oid":"68c25de834cec8f79ad04029"},"poi_id":"poi_2bf06385","name":"Treebo Tryst Fortel","category":"Hotel"}
+{"_id":{"$oid":"68c25de834cec8f79ad0402a"},"poi_id":"poi_cf207060","name":"Springhaven","category":"Other"}
+{"_id":{"$oid":"68c25de834cec8f79ad0402b"},"poi_id":"poi_4d657077","name":"Benzz Park","category":"Park"}
+{"_id":{"$oid":"68c25de834cec8f79ad0402c"},"poi_id":"poi_964db9ec","name":"Hotel Mount Heera","category":"Hotel"}
+{"_id":{"$oid":"68c25de834cec8f79ad0402d"},"poi_id":"poi_c5fb3d5d","name":"The Belstead","category":"Hotel"}
+{"_id":{"$oid":"68c25de834cec8f79ad0402e"},"poi_id":"poi_162ca187","name":"Sea Shell Residency","category":"Hotel"}
+{"_id":{"$oid":"68c25de834cec8f79ad0402f"},"poi_id":"poi_c60ca2e2","name":"Abu Sarovar Portico","category":"Hotel"}
+{"_id":{"$oid":"68c25de834cec8f79ad04030"},"poi_id":"poi_c7ae2cf7","name":"Sheraton Grand Chennai Resort Spa","category":"Hotel"}
+{"_id":{"$oid":"68c25de834cec8f79ad04031"},"poi_id":"poi_42dd8fac","name":"Oyo Flagship 479 Royapettah","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad04032"},"poi_id":"poi_c6069159","name":"Ginger Hotel","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad04033"},"poi_id":"poi_aebce309","name":"Vestin Park","category":"Park"}
+{"_id":{"$oid":"68c25de934cec8f79ad04034"},"poi_id":"poi_87577d82","name":"Vgp Golden Beach Resort","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad04035"},"poi_id":"poi_8ac27ab0","name":"Green Meadows Resort","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad04037"},"poi_id":"poi_9bc85c07","name":"Malles Manotaa","category":"Restaurant/Cafe"}
+{"_id":{"$oid":"68c25de934cec8f79ad04038"},"poi_id":"poi_455c2862","name":"Hotel Pandian","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad04039"},"poi_id":"poi_8b2c2700","name":"Comfort Inn Marina Towers","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad0403a"},"poi_id":"poi_fd07fdf4","name":"Kohinoor Asiana Hotel","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad0403b"},"poi_id":"poi_3b523526","name":"The Metroplace Hotels","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad0403c"},"poi_id":"poi_ad90c163","name":"Beverly Hotel","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad0403d"},"poi_id":"poi_2b7c8821","name":"Fabhotel Pearl","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad0403e"},"poi_id":"poi_ce53ad3b","name":"Apple Residency","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad0403f"},"poi_id":"poi_5c73a009","name":"Orange Inn","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad04040"},"poi_id":"poi_9037dd8c","name":"Vistana Hotel","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad04041"},"poi_id":"poi_63728b53","name":"Beach Park Club Resorts","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad04042"},"poi_id":"poi_8c114be0","name":"Sangeetha Residency","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad04043"},"poi_id":"poi_6079ddea","name":"Citrus East Coast Road Chennai","category":"Restaurant/Cafe"}
+{"_id":{"$oid":"68c25de934cec8f79ad04044"},"poi_id":"poi_bd4d5be1","name":"Raj Grand Days","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad04045"},"poi_id":"poi_40cdc04d","name":"Manhattan Hotel","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad04046"},"poi_id":"poi_5ce6c9ad","name":"Ilara Hotel And Spa","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad04047"},"poi_id":"poi_b4cdbc89","name":"Fabhotel Innside Serviced Apartment T Nagar","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad04048"},"poi_id":"poi_1ecb24ff","name":"Hotel Panasia Residency","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad04049"},"poi_id":"poi_4537a9d6","name":"Buharis Blue Lagoon Resort","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad0404a"},"poi_id":"poi_36ddf6d8","name":"Treebo Trend Niketana","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad0404b"},"poi_id":"poi_b3d4d5db","name":"Henkala Hotel","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad0404c"},"poi_id":"poi_02a431ff","name":"Haku Service Apartments","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad0404d"},"poi_id":"poi_42c617d3","name":"The Spin Hotel","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad0404e"},"poi_id":"poi_81f8678f","name":"Akshay Inn","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad0404f"},"poi_id":"poi_b08a4d3c","name":"Cozy Inn Chennai","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad04050"},"poi_id":"poi_9359ffc2","name":"Kings Cross Residency","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad04051"},"poi_id":"poi_e803808b","name":"Abeliya Serviced Apartment","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad04052"},"poi_id":"poi_291b68c6","name":"Kek Annexure I","category":"Other"}
+{"_id":{"$oid":"68c25de934cec8f79ad04053"},"poi_id":"poi_8f981f44","name":"Hotel Sai International","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad04054"},"poi_id":"poi_d5214cbf","name":"Sree Devi Niwas Serviced Apartments","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad04055"},"poi_id":"poi_2df654b9","name":"Fabhotel Alreef Residency Vadaplani","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad04056"},"poi_id":"poi_7068da37","name":"The Legends","category":"Bar/Pub"}
+{"_id":{"$oid":"68c25de934cec8f79ad04057"},"poi_id":"poi_4cde664b","name":"City Home Hotel","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad04058"},"poi_id":"poi_bf417759","name":"Hudson Hotels Resorts","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad04059"},"poi_id":"poi_9f62742d","name":"Samco Hotel","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad0405a"},"poi_id":"poi_ec9bc00e","name":"Saaral Residency","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad0405b"},"poi_id":"poi_abc055aa","name":"Oyo 10735 Cozee Stay","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad0405c"},"poi_id":"poi_edbbd6d2","name":"Pine Tree Hotel","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad0405d"},"poi_id":"poi_fd2b5290","name":"Fabhotel Pearl T Nagar","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad0405e"},"poi_id":"poi_486b733c","name":"Pebbles Serviced Apartments","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad0405f"},"poi_id":"poi_a1a75515","name":"Hotel Melody","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad04060"},"poi_id":"poi_f938868f","name":"Lakshmi Nest Serviced Apartments","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad04061"},"poi_id":"poi_70bf6019","name":"Sona S Inn Chennai","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad04062"},"poi_id":"poi_d9766048","name":"Hotel Planet Grande","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad04063"},"poi_id":"poi_3f71d3f7","name":"Hotel Chennai Deluxe","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad04064"},"poi_id":"poi_0a4e0b75","name":"Orion Residency","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad04065"},"poi_id":"poi_27171d81","name":"Royal Chennai Residency","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad04066"},"poi_id":"poi_e935eb48","name":"Grand Cascade","category":"Attraction"}
+{"_id":{"$oid":"68c25de934cec8f79ad04067"},"poi_id":"poi_d961ad46","name":"Fabhotel Udipi Home Egmore","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad04068"},"poi_id":"poi_d7baf011","name":"Mount Residency","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad0406a"},"poi_id":"poi_adf71621","name":"Kolam Adyar Chennai","category":"Park"}
+{"_id":{"$oid":"68c25de934cec8f79ad0406b"},"poi_id":"poi_b386ac1d","name":"Treebo Trend Guindy","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad0406c"},"poi_id":"poi_53a741a6","name":"Blu Iris","category":"Other"}
+{"_id":{"$oid":"68c25de934cec8f79ad0406d"},"poi_id":"poi_a6f4612a","name":"Fabhotel Prime Santhome Inn","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad0406e"},"poi_id":"poi_629f20b6","name":"Chennai Residency","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad0406f"},"poi_id":"poi_eab0cbc8","name":"Tri Sea Residency","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad04070"},"poi_id":"poi_3fe895bf","name":"Zaith Residency Premium Business Class Hotel","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad04071"},"poi_id":"poi_46c0fd60","name":"Days Inn Shan","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad04072"},"poi_id":"poi_eaffbc79","name":"Eldoris A Boutique Hotel","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad04073"},"poi_id":"poi_57f2a7eb","name":"J J S Guest House","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad04074"},"poi_id":"poi_ab898d05","name":"Rivera Hotel","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad04075"},"poi_id":"poi_1c342913","name":"The City Manor","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad04076"},"poi_id":"poi_4174ba7d","name":"Chennai Gate Hotel","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad04077"},"poi_id":"poi_4b7b0cda","name":"Oyo 1054 Hotel Avnb Towers","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad04078"},"poi_id":"poi_1579f388","name":"Oyo 19021 Grand Tiara","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad04079"},"poi_id":"poi_311d8c1b","name":"Golden Bay Resorts","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad0407b"},"poi_id":"poi_40df8bde","name":"Azeez Avenue Hotel","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad0407c"},"poi_id":"poi_65964463","name":"Rainbow Hotel And Serviced Apartment Adyar","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad0407d"},"poi_id":"poi_b896aa69","name":"Ayur Resorts","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad0407e"},"poi_id":"poi_113a5b3f","name":"Hotel Himalaya Residency","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad0407f"},"poi_id":"poi_1c14d39e","name":"Hotel City Tower Chennai","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad04080"},"poi_id":"poi_2fc4bdf1","name":"Le Waterina The Boutique Hotel","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad04081"},"poi_id":"poi_8e54df36","name":"Crescent Park Hotel","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad04082"},"poi_id":"poi_43b999de","name":"Oyo 15714 Nachiappa Residency","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad04083"},"poi_id":"poi_9f3cef08","name":"Ponnis Grand Inn","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad04084"},"poi_id":"poi_98658797","name":"Ngh Transit Hotel","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad04085"},"poi_id":"poi_ab0eae91","name":"Zingle Stay Airport","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad04086"},"poi_id":"poi_ac9abbe1","name":"Orchid Inn","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad04087"},"poi_id":"poi_07a9d926","name":"Park View Hotel","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad04088"},"poi_id":"poi_5ec7949b","name":"Buhari Royale Boutique Hotel","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad04089"},"poi_id":"poi_ad175801","name":"Nayagara Hotel","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad0408a"},"poi_id":"poi_8971740a","name":"Ulo Spacio","category":"Other"}
+{"_id":{"$oid":"68c25de934cec8f79ad0408b"},"poi_id":"poi_6fcd11b0","name":"Hotel Comfort","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad0408c"},"poi_id":"poi_89dff663","name":"Hotel Chennai Gateway","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad0408d"},"poi_id":"poi_ba0d6ddf","name":"Ashok Residency","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad0408e"},"poi_id":"poi_09160bf5","name":"Treebo Trip Majestic Inn","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad04091"},"poi_id":"poi_0a1755ad","name":"Clarion Chennai","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad04092"},"poi_id":"poi_63197dec","name":"Hotel Dee Cee Manor","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad04093"},"poi_id":"poi_a9905090","name":"Oyo 9578 Gemini Inn","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad04094"},"poi_id":"poi_f795c22b","name":"Samudra Residency","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad04095"},"poi_id":"poi_62d5a743","name":"Greens Gate Chennai","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad04096"},"poi_id":"poi_572e5b85","name":"Glm Meridian","category":"Other"}
+{"_id":{"$oid":"68c25de934cec8f79ad04097"},"poi_id":"poi_a57a4ecd","name":"Days Hotel Chennai Omr","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad04098"},"poi_id":"poi_cfa6ee36","name":"The Lotus Hotel Sameera","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad04099"},"poi_id":"poi_efa84633","name":"Treebo Trend Pechis Castle","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad0409a"},"poi_id":"poi_6111ec78","name":"Lake View Park Hotel","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad0409b"},"poi_id":"poi_e784d289","name":"Capital O 896 The Royal Regency","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad0409c"},"poi_id":"poi_daba4681","name":"Step Inn Serviced Apartments","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad0409d"},"poi_id":"poi_23c0ce53","name":"Golden Fruits Business Suites","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad0409e"},"poi_id":"poi_7d1c8de9","name":"Hotel Manickam Grand","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad0409f"},"poi_id":"poi_223a9128","name":"Hotel Zen Garden","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad040a0"},"poi_id":"poi_5a50c2ff","name":"Paradise Guest House","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad040a1"},"poi_id":"poi_eee1ef48","name":"Annsun Boutique Hotels","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad040a2"},"poi_id":"poi_e61448e4","name":"Oyo 10744 Chennai Trade Centre","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad040a3"},"poi_id":"poi_aef967ee","name":"The Farm","category":"Park"}
+{"_id":{"$oid":"68c25de934cec8f79ad040a4"},"poi_id":"poi_a283a13d","name":"Treebo Trend Nestlay Casa","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad040a5"},"poi_id":"poi_08599c17","name":"Harrisons Hotel","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad040a6"},"poi_id":"poi_700d4250","name":"Treebo Trend Adin Residence","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad040a7"},"poi_id":"poi_e670e276","name":"Star City Hotel Serviced Apartments","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad040a8"},"poi_id":"poi_7555fe6c","name":"Hotel Chennai Le Palace","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad040a9"},"poi_id":"poi_288c6139","name":"Value Hotel","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad040aa"},"poi_id":"poi_75a9a116","name":"Hotel Maurya International","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad040ab"},"poi_id":"poi_2e8afb9b","name":"Liberty Park Hotel","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad040ac"},"poi_id":"poi_82ef4696","name":"V7 Hotel","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad040ad"},"poi_id":"poi_90cc0a0e","name":"Southern Crest","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad040ae"},"poi_id":"poi_f7b8a2a8","name":"Red Lollipop Hostel","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad040b0"},"poi_id":"poi_485252a1","name":"Bhuvi Serviced Apartments","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad040b1"},"poi_id":"poi_e83dc840","name":"Grand Residence","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad040b2"},"poi_id":"poi_7aeccb95","name":"Treebo Trend Cine City","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad040b3"},"poi_id":"poi_feb4c9b2","name":"Treebo Trend J S Five Two Boutique","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad040b4"},"poi_id":"poi_4e460126","name":"Saibala Grand","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad040b5"},"poi_id":"poi_224b22b6","name":"Esthell Continental Hotel","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad040b7"},"poi_id":"poi_8226379e","name":"Novotel Chennai Chamiers Road","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad040b8"},"poi_id":"poi_52d80be6","name":"Crystal Residency","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad040b9"},"poi_id":"poi_08626e32","name":"Hotel Mars Classic","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad040ba"},"poi_id":"poi_85b8ec73","name":"Fabhotel Metro Manor Central Station","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad040bb"},"poi_id":"poi_651e799b","name":"Treebo Trend Nestlay Airport","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad040bc"},"poi_id":"poi_b746d1ac","name":"Treebo Trend Fourth Avenue","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad040bd"},"poi_id":"poi_7a7a2c7a","name":"Elements Hostel","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad040be"},"poi_id":"poi_6656b333","name":"Broadlands Hotel","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad040bf"},"poi_id":"poi_2566a2c4","name":"Global Residency","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad040c0"},"poi_id":"poi_f3e07e08","name":"The Kings Hotel","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad040c1"},"poi_id":"poi_c797ea74","name":"Suriya International Hotel","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad040c2"},"poi_id":"poi_b2419c68","name":"The Chariot","category":"Bar/Pub"}
+{"_id":{"$oid":"68c25de934cec8f79ad040c3"},"poi_id":"poi_269de222","name":"Fabhotel Blossoms T Nagar","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad040c4"},"poi_id":"poi_34d08ace","name":"Fabhotel Priyadarshini Park Mount Road","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad040c5"},"poi_id":"poi_1240fa98","name":"Madras Hotel Ashoka","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad040c6"},"poi_id":"poi_20c2770b","name":"Hotel Aruna Chennai","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad040c7"},"poi_id":"poi_4c4e4a0d","name":"Oyo 17030 Bluten","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad040c8"},"poi_id":"poi_4afe457a","name":"Peace Inn","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad040c9"},"poi_id":"poi_e9d38f27","name":"Samudra Inn","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad040ca"},"poi_id":"poi_ed633bb7","name":"Fabhotel Queensway T Nagar","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad040cb"},"poi_id":"poi_8854e958","name":"Ktdc Rain Drops Hotel Chennai","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad040cc"},"poi_id":"poi_32ef7041","name":"Royal Green Accommodation","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad040cd"},"poi_id":"poi_64f0c136","name":"Hotel Planet Mount","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad040ce"},"poi_id":"poi_85bee552","name":"Hotel Grand Palace","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad040cf"},"poi_id":"poi_5b3a9339","name":"Treebo Trip Hive","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad040d1"},"poi_id":"poi_869eb882","name":"Oyo 15675 Nachiappa Park","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad040d2"},"poi_id":"poi_5ad1a88d","name":"Hotel Mars Deluxe","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad040d3"},"poi_id":"poi_272348e6","name":"Hotel Park Plaza","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad040d4"},"poi_id":"poi_53fe3fb0","name":"Hotel Goutham Manor","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad040d5"},"poi_id":"poi_5ae86937","name":"Treebo Trend Elan","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad040d6"},"poi_id":"poi_0eac08c5","name":"Hotel Oriental Inn","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad040d7"},"poi_id":"poi_167f7f1f","name":"Velacity Luxury Serviced Apartments","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad040d9"},"poi_id":"poi_3066ce25","name":"Fabhotel Emerald Manor","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad040da"},"poi_id":"poi_b4b10d77","name":"Maris Hotel","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad040db"},"poi_id":"poi_7a389666","name":"Lloyds Guest House Near Music Academy","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad040dc"},"poi_id":"poi_8e3ec8a9","name":"Shelter Hotel","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad040dd"},"poi_id":"poi_6399962c","name":"Crescent Inn","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad040de"},"poi_id":"poi_39473af3","name":"Fabhotel Flamingo Anna Nagar","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad040df"},"poi_id":"poi_d0913c88","name":"The Lotus Apartment Hotel Venkatraman Street","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad040e0"},"poi_id":"poi_7e1723d4","name":"Pleasant Days Resort","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad040e1"},"poi_id":"poi_b87ed193","name":"Just Guest House","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad040e2"},"poi_id":"poi_e228550a","name":"Bhimaas Temple Tree Hotel","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad040e3"},"poi_id":"poi_583a2fd8","name":"Hotel Victoria","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad040e4"},"poi_id":"poi_4a2cc1ca","name":"Zostel Chennai","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad040e5"},"poi_id":"poi_ca85e80d","name":"Treebo Emirates Residency","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad040e6"},"poi_id":"poi_deea8019","name":"Oyo 15101 Hotel Royal Paris","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad040e8"},"poi_id":"poi_7e22bf50","name":"Hotel Karpagam International","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad040e9"},"poi_id":"poi_d395ce61","name":"Hotel Landmark View","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad040ea"},"poi_id":"poi_4653c916","name":"Varuna Inn Banquets Resort","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad040eb"},"poi_id":"poi_098f42f2","name":"Oyo 2961 Virugambakkam","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad040ec"},"poi_id":"poi_02911e85","name":"Aadithya Hotel","category":"Hotel"}
+{"_id":{"$oid":"68c25de934cec8f79ad040ed"},"poi_id":"poi_ffab22cf","name":"Highnest Hotel","category":"Hotel"}
+{"_id":{"$oid":"68c25dea34cec8f79ad040ef"},"poi_id":"poi_43407bf3","name":"Hotel Atchaya","category":"Hotel"}
+{"_id":{"$oid":"68c25dea34cec8f79ad040f0"},"poi_id":"poi_85ce77b5","name":"Floressa Randa","category":"Other"}
+{"_id":{"$oid":"68c25dea34cec8f79ad040f1"},"poi_id":"poi_31a63f24","name":"Saibala Inn","category":"Hotel"}
+{"_id":{"$oid":"68c25dea34cec8f79ad040f2"},"poi_id":"poi_f6c423b4","name":"Hotel Greens","category":"Hotel"}
+{"_id":{"$oid":"68c25dea34cec8f79ad040f3"},"poi_id":"poi_4086fcf6","name":"Kanchi Residency Hotel","category":"Hotel"}
+{"_id":{"$oid":"68c25dea34cec8f79ad040f4"},"poi_id":"poi_9dd8eb70","name":"Hotel Peninsula","category":"Hotel"}
+{"_id":{"$oid":"68c25dea34cec8f79ad040f5"},"poi_id":"poi_9b7d95e6","name":"Fast Track Chennai Airport","category":"Other"}
+{"_id":{"$oid":"68c25dea34cec8f79ad040f6"},"poi_id":"poi_14c3d6bb","name":"Fairfield By Marriott Chennai Omr","category":"Hotel"}
+{"_id":{"$oid":"68c25dea34cec8f79ad040f7"},"poi_id":"poi_83457c3f","name":"Oyo 16890 Hotel Srm Central Park","category":"Hotel"}
+{"_id":{"$oid":"68c25dea34cec8f79ad040f9"},"poi_id":"poi_927683b3","name":"Hotel Shri Valli Residency","category":"Hotel"}
+{"_id":{"$oid":"68c25dea34cec8f79ad040fa"},"poi_id":"poi_822f9c19","name":"Crossway Parklane Airport Hotel Chennai","category":"Hotel"}
+{"_id":{"$oid":"68c25dea34cec8f79ad040fb"},"poi_id":"poi_494c4edf","name":"Vijaya Residency Porur","category":"Hotel"}
+{"_id":{"$oid":"68c25dea34cec8f79ad040fc"},"poi_id":"poi_b3e66379","name":"Suvi Transit Accommodation Chrompet","category":"Hotel"}
+{"_id":{"$oid":"68c25dea34cec8f79ad040fd"},"poi_id":"poi_e1ed41ac","name":"I Way Residency","category":"Hotel"}
+{"_id":{"$oid":"68c25dea34cec8f79ad040fe"},"poi_id":"poi_1b0cacac","name":"Metro Grand Hotel","category":"Hotel"}
+{"_id":{"$oid":"68c25dea34cec8f79ad040ff"},"poi_id":"poi_70000376","name":"Treebo Trend Sekaran","category":"Hotel"}
+{"_id":{"$oid":"68c25dea34cec8f79ad04100"},"poi_id":"poi_ec84d2a4","name":"Goldmine Hotel","category":"Hotel"}
+{"_id":{"$oid":"68c25dea34cec8f79ad04101"},"poi_id":"poi_26098b9c","name":"Lotels Hotel","category":"Hotel"}
+{"_id":{"$oid":"68c25dea34cec8f79ad04102"},"poi_id":"poi_32eb6f04","name":"Dm Travellers Inn","category":"Hotel"}
+{"_id":{"$oid":"68c25dea34cec8f79ad04103"},"poi_id":"poi_5ae0bdeb","name":"Hilarity Inn","category":"Hotel"}
+{"_id":{"$oid":"68c25dea34cec8f79ad04104"},"poi_id":"poi_88cb5fad","name":"Olive Residency","category":"Hotel"}
+{"_id":{"$oid":"68c25dea34cec8f79ad04105"},"poi_id":"poi_8a3923ad","name":"Treebo Trend Grace Residency","category":"Hotel"}
+{"_id":{"$oid":"68c25dea34cec8f79ad04106"},"poi_id":"poi_c0b6195a","name":"Thangam Balaji Guest House","category":"Hotel"}
+{"_id":{"$oid":"68c25dea34cec8f79ad04107"},"poi_id":"poi_10211ce5","name":"Hotel Anchor","category":"Hotel"}
+{"_id":{"$oid":"68c25dea34cec8f79ad04108"},"poi_id":"poi_444e3c86","name":"Fabhotel Rithikha Inn 1","category":"Hotel"}
+{"_id":{"$oid":"68c25dea34cec8f79ad04109"},"poi_id":"poi_772f65ee","name":"Fabhotel Iberis Sholinganallur","category":"Hotel"}
+{"_id":{"$oid":"68c25dea34cec8f79ad0410a"},"poi_id":"poi_4c4acc1d","name":"Fabhotel Palm Tree Anna Nagar","category":"Hotel"}
+{"_id":{"$oid":"68c25dea34cec8f79ad0410b"},"poi_id":"poi_712138b6","name":"Sudha Inn","category":"Hotel"}
+{"_id":{"$oid":"68c25dea34cec8f79ad0410c"},"poi_id":"poi_183ffd2c","name":"Blue Nile Hotel","category":"Hotel"}
+{"_id":{"$oid":"68c25dea34cec8f79ad0410d"},"poi_id":"poi_f8d7aa08","name":"Oyo 13230 Ark Residency","category":"Other"}
+{"_id":{"$oid":"68c25dea34cec8f79ad0410e"},"poi_id":"poi_f1a5fb4e","name":"Emerald Park Hotel","category":"Hotel"}
+{"_id":{"$oid":"68c25dea34cec8f79ad0410f"},"poi_id":"poi_c9a1e46d","name":"Park Elanza","category":"Other"}
+{"_id":{"$oid":"68c25dea34cec8f79ad04110"},"poi_id":"poi_991265c5","name":"Oyo Rooms Omr Sholinganallur","category":"Other"}
+{"_id":{"$oid":"68c25dea34cec8f79ad04112"},"poi_id":"poi_4e85c2bd","name":"Hotel Ranjith","category":"Hotel"}
+{"_id":{"$oid":"68c25dea34cec8f79ad04114"},"poi_id":"poi_224717fc","name":"Zama Lodge","category":"Other"}
+{"_id":{"$oid":"68c25dea34cec8f79ad04115"},"poi_id":"poi_025775c5","name":"Uno The Business Hotel","category":"Hotel"}
+{"_id":{"$oid":"68c25dea34cec8f79ad04116"},"poi_id":"poi_14dd7f03","name":"R M C Travellers Inn","category":"Hotel"}
+{"_id":{"$oid":"68c25dea34cec8f79ad04117"},"poi_id":"poi_795baee8","name":"Hotel Gemini Residency","category":"Hotel"}
+{"_id":{"$oid":"68c25dea34cec8f79ad04118"},"poi_id":"poi_d4b17c14","name":"Motel Highway","category":"Other"}
+{"_id":{"$oid":"68c25dea34cec8f79ad04119"},"poi_id":"poi_5a9dbe79","name":"Oneira Eleganze","category":"Other"}
+{"_id":{"$oid":"68c25dea34cec8f79ad0411a"},"poi_id":"poi_2f78f787","name":"Treebo Trip Sr Residency","category":"Other"}
+{"_id":{"$oid":"68c25dea34cec8f79ad0411b"},"poi_id":"poi_4319e472","name":"Swarna Sudarshan Service Apartments","category":"Other"}
+{"_id":{"$oid":"68c25dea34cec8f79ad0411c"},"poi_id":"poi_341f797c","name":"Hotel Aruna International","category":"Hotel"}
+{"_id":{"$oid":"68c25dea34cec8f79ad0411d"},"poi_id":"poi_83e92e24","name":"Hotel Sai Krish Grand","category":"Hotel"}
+{"_id":{"$oid":"68c25dea34cec8f79ad0411e"},"poi_id":"poi_7e0749eb","name":"Hotel Kingss Park","category":"Hotel"}
+{"_id":{"$oid":"68c25dea34cec8f79ad0411f"},"poi_id":"poi_e3a9aa5c","name":"Hotel Sea Shore Inn","category":"Hotel"}
+{"_id":{"$oid":"68c25dea34cec8f79ad04120"},"poi_id":"poi_52ad64c0","name":"Sakithyan Hotel","category":"Hotel"}
+{"_id":{"$oid":"68c25dea34cec8f79ad04121"},"poi_id":"poi_da55e2c0","name":"Brownstar Boutique Hotel","category":"Hotel"}
+{"_id":{"$oid":"68c25dea34cec8f79ad04122"},"poi_id":"poi_7c63f36d","name":"Oyo 968 Hotel Poigai","category":"Hotel"}
+{"_id":{"$oid":"68c25dea34cec8f79ad04123"},"poi_id":"poi_80aebef4","name":"Oyo 9258 Rd Towers","category":"Other"}
+{"_id":{"$oid":"68c25dea34cec8f79ad04124"},"poi_id":"poi_5c59aee4","name":"Oyo Rooms Teynampet","category":"Other"}
+{"_id":{"$oid":"68c25dea34cec8f79ad04125"},"poi_id":"poi_7557de7d","name":"Perfect Haven Egmore","category":"Other"}
+{"_id":{"$oid":"68c25dea34cec8f79ad04126"},"poi_id":"poi_d14b3ef1","name":"Beach Elegance Serviced Apartments","category":"Other"}
+{"_id":{"$oid":"68c25dea34cec8f79ad04127"},"poi_id":"poi_b13981b6","name":"Raaj Bhaavan Hotel","category":"Hotel"}
+{"_id":{"$oid":"68c25dea34cec8f79ad04128"},"poi_id":"poi_3a0660ba","name":"De Castle Inn","category":"Hotel"}
+{"_id":{"$oid":"68c25dea34cec8f79ad04129"},"poi_id":"poi_e2c7188b","name":"The Laurels Hotel","category":"Hotel"}
+{"_id":{"$oid":"68c25dea34cec8f79ad0412a"},"poi_id":"poi_9319c89d","name":"Hotel Rathnavel Towers","category":"Hotel"}
+{"_id":{"$oid":"68c25dea34cec8f79ad0412b"},"poi_id":"poi_0d455f4e","name":"Star City Nungambakkam","category":"Other"}
+{"_id":{"$oid":"68c25dea34cec8f79ad0412c"},"poi_id":"poi_dbf0d426","name":"Hotel Ashoka","category":"Hotel"}
+{"_id":{"$oid":"68c25dea34cec8f79ad0412d"},"poi_id":"poi_a9e2a172","name":"Skywalk Hotel Ampa Skywalk","category":"Hotel"}
+{"_id":{"$oid":"68c25dea34cec8f79ad0412e"},"poi_id":"poi_5b772a5a","name":"Oyo 19022 Evlewt Omr","category":"Other"}
+{"_id":{"$oid":"68c25dea34cec8f79ad0412f"},"poi_id":"poi_5923eaf3","name":"Ulo Grand Beach Resort","category":"Hotel"}
+{"_id":{"$oid":"68c25dea34cec8f79ad04130"},"poi_id":"poi_618a71a4","name":"Grand Treat","category":"Other"}
+{"_id":{"$oid":"68c25dea34cec8f79ad04131"},"poi_id":"poi_1ef09d45","name":"Bhimas Inn","category":"Hotel"}
+{"_id":{"$oid":"68c25dea34cec8f79ad04132"},"poi_id":"poi_a853929d","name":"Sornam International Hotel","category":"Hotel"}
+{"_id":{"$oid":"68c25dea34cec8f79ad04133"},"poi_id":"poi_e5ccef5a","name":"Welcome Hotel","category":"Hotel"}
+{"_id":{"$oid":"68c25dea34cec8f79ad04134"},"poi_id":"poi_1a1e77f0","name":"The Mount City","category":"Other"}
+{"_id":{"$oid":"68c25dea34cec8f79ad04135"},"poi_id":"poi_671a33d8","name":"Omr Guest House","category":"Other"}
+{"_id":{"$oid":"68c25dea34cec8f79ad04136"},"poi_id":"poi_236fb41b","name":"Mala Inn","category":"Hotel"}
+{"_id":{"$oid":"68c25dea34cec8f79ad04137"},"poi_id":"poi_c8f4180b","name":"Hotel Kuber Inn","category":"Hotel"}
+{"_id":{"$oid":"68c25dea34cec8f79ad04138"},"poi_id":"poi_6141f5c6","name":"Hotel Amirta Inn","category":"Hotel"}
+{"_id":{"$oid":"68c25dea34cec8f79ad04139"},"poi_id":"poi_ca362500","name":"Golden Tower Lodge","category":"Other"}
+{"_id":{"$oid":"68c25dea34cec8f79ad0413a"},"poi_id":"poi_f63f284f","name":"Hotel Sabari S Nest","category":"Hotel"}
+{"_id":{"$oid":"68c25dea34cec8f79ad0413b"},"poi_id":"poi_6fee6829","name":"Studio 36 Boutique Hotel","category":"Hotel"}
+{"_id":{"$oid":"68c25dea34cec8f79ad0413d"},"poi_id":"poi_c7c81363","name":"Aqua Green Hotel And Resort","category":"Hotel"}
+{"_id":{"$oid":"68c25dea34cec8f79ad0413f"},"poi_id":"poi_f5668249","name":"Singapore Hotel","category":"Hotel"}
+{"_id":{"$oid":"68c25dea34cec8f79ad04140"},"poi_id":"poi_fdf473b1","name":"The Retreat Hotel","category":"Hotel"}
+{"_id":{"$oid":"68c25dea34cec8f79ad04141"},"poi_id":"poi_c3d2410f","name":"Gharanah Serviced Apartments","category":"Other"}
+{"_id":{"$oid":"68c25dea34cec8f79ad04142"},"poi_id":"poi_a37873a0","name":"Taj Kazura Hotel","category":"Hotel"}
+{"_id":{"$oid":"68c25dea34cec8f79ad04144"},"poi_id":"poi_c6ef1415","name":"Kences Inn","category":"Hotel"}
+{"_id":{"$oid":"68c25dea34cec8f79ad04145"},"poi_id":"poi_8e53e75f","name":"Grand Orient","category":"Other"}
+{"_id":{"$oid":"68c25dea34cec8f79ad04146"},"poi_id":"poi_d0084908","name":"Akash Inn","category":"Hotel"}
+{"_id":{"$oid":"68c25dea34cec8f79ad04147"},"poi_id":"poi_789be607","name":"Oyo 4921 Stay Easy Tiruvanmiyur","category":"Other"}
+{"_id":{"$oid":"68c25dea34cec8f79ad04148"},"poi_id":"poi_1a118561","name":"Fabhotel Royal Palace Marina","category":"Hotel"}
+{"_id":{"$oid":"68c25dea34cec8f79ad04149"},"poi_id":"poi_64f005af","name":"Hotel Angels Nest","category":"Hotel"}
+{"_id":{"$oid":"68c25dea34cec8f79ad0414b"},"poi_id":"poi_a32d1a2b","name":"The Mount Regency","category":"Other"}
+{"_id":{"$oid":"68c25dea34cec8f79ad0414c"},"poi_id":"poi_6f4f1cd2","name":"The Slate Hotel","category":"Hotel"}
+{"_id":{"$oid":"68c25dea34cec8f79ad0414d"},"poi_id":"poi_263df8b3","name":"Chamiers Park Hotel","category":"Hotel"}
+{"_id":{"$oid":"68c25dea34cec8f79ad0414e"},"poi_id":"poi_78cc476c","name":"Thulashi Park","category":"Other"}
+{"_id":{"$oid":"68c25dea34cec8f79ad0414f"},"poi_id":"poi_7d2681c4","name":"Oyo Premium Chennai Central Station","category":"Other"}
+{"_id":{"$oid":"68c25dea34cec8f79ad04150"},"poi_id":"poi_a6b8be20","name":"Oyo Rooms Koyambedu Bus Stand","category":"Other"}
+{"_id":{"$oid":"68c25dea34cec8f79ad04151"},"poi_id":"poi_98fbea83","name":"Hotel Bharani","category":"Hotel"}
+{"_id":{"$oid":"68c25dea34cec8f79ad04152"},"poi_id":"poi_ed2db3e5","name":"Hotel White Park","category":"Hotel"}
+{"_id":{"$oid":"68c25dea34cec8f79ad04153"},"poi_id":"poi_b0415f7e","name":"Ponnusamy Hotel","category":"Hotel"}
+{"_id":{"$oid":"68c25dea34cec8f79ad04154"},"poi_id":"poi_a78a66b4","name":"Kings Serviced Apartments","category":"Other"}
+{"_id":{"$oid":"68c25dea34cec8f79ad04156"},"poi_id":"poi_604b1609","name":"Rohini International Hotel","category":"Hotel"}
+{"_id":{"$oid":"68c25dea34cec8f79ad04157"},"poi_id":"poi_38457213","name":"Hotel S R M Grands","category":"Hotel"}
+{"_id":{"$oid":"68c25dea34cec8f79ad04158"},"poi_id":"poi_7f7c2f01","name":"The Summit","category":"Other"}
+{"_id":{"$oid":"68c25dea34cec8f79ad04159"},"poi_id":"poi_352f625c","name":"Hotel Crescent Crest","category":"Hotel"}
+{"_id":{"$oid":"68c25dea34cec8f79ad0415c"},"poi_id":"poi_c130ccba","name":"Raj Palace Sundar","category":"Other"}
+{"_id":{"$oid":"68c25dea34cec8f79ad0415d"},"poi_id":"poi_e77fb52e","name":"Hablis Hotel","category":"Hotel"}
+{"_id":{"$oid":"68c25dea34cec8f79ad0415e"},"poi_id":"poi_98fec461","name":"The Gateway Hotel It Expressway Chennai","category":"Hotel"}
+{"_id":{"$oid":"68c25dea34cec8f79ad0415f"},"poi_id":"poi_108f11f6","name":"E Hotel","category":"Hotel"}
+{"_id":{"$oid":"68c25dea34cec8f79ad04160"},"poi_id":"poi_33a723db","name":"Radisson Blu Hotel Chennai City Centre","category":"Hotel"}
+{"_id":{"$oid":"68c25dea34cec8f79ad04161"},"poi_id":"poi_6b85da3d","name":"Feathers A Radha Hotel","category":"Hotel"}
+{"_id":{"$oid":"68c25dea34cec8f79ad04163"},"poi_id":"poi_a9380b7d","name":"The Raintree Hotel Anna Salai","category":"Hotel"}
+{"_id":{"$oid":"68c25dea34cec8f79ad04164"},"poi_id":"poi_46203a66","name":"The Residency Towers","category":"Other"}
+{"_id":{"$oid":"68c25dea34cec8f79ad04165"},"poi_id":"poi_bd2acb8e","name":"Crowne Plaza Chennai Adyar Park","category":"Other"}
+{"_id":{"$oid":"68c25dea34cec8f79ad04166"},"poi_id":"poi_c5bc2d23","name":"Savera Hotel","category":"Hotel"}
+{"_id":{"$oid":"68c25dfd34cec8f79ad0416a"},"poi_id":"poi_5fc67f8f","name":"Domino's Pizza | T. Nagar, Chennai","category":"Other"}
+{"_id":{"$oid":"68c25dfd34cec8f79ad0416b"},"poi_id":"poi_c6287fe1","name":"Domino's Pizza | Kilpauk, Chennai","category":"Other"}
+{"_id":{"$oid":"68c25dfe34cec8f79ad0416e"},"poi_id":"poi_aa5bd431","name":"VGP nagar park","category":"Other"}

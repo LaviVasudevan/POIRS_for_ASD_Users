@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>POI Recommender</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<style>
+/* ── design tokens ───────────────────────────────────────── */
+:root{
+  --bg:#07090d; --s1:#0d1118; --s2:#131c28; --s3:#1a2435;
+  --border:rgba(255,255,255,.06); --b2:rgba(255,255,255,.11);
+  --green:#3dffa0; --orange:#ff7a4f; --blue:#7b8fff; --gold:#ffc96e;
+  --text:#d4dce8; --muted:#52637a; --muted2:#2e3d52;
+  --glow:0 0 28px rgba(61,255,160,.13);
+  --glow-sm:0 0 12px rgba(61,255,160,.08);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:'Inter',sans-serif;font-size:14px;line-height:1.6;min-height:100vh}
+/* grain */
+body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:0;
+  background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.022'/%3E%3C/svg%3E")}
+
+/* ── layout ──────────────────────────────────────────────── */
+.wrap{position:relative;z-index:1;display:grid;grid-template-columns:340px 1fr;min-height:100vh}
+
+/* ── sidebar ─────────────────────────────────────────────── */
+.sidebar{background:var(--s1);border-right:1px solid var(--border);
+  display:flex;flex-direction:column;height:100vh;position:sticky;top:0;overflow:hidden}
+
+/* brand */
+.brand{padding:22px 22px 16px;border-bottom:1px solid var(--border);flex-shrink:0}
+.brand-tag{font-family:'IBM Plex Mono',monospace;font-size:9px;letter-spacing:3px;text-transform:uppercase;color:var(--green);margin-bottom:5px}
+.brand-name{font-size:17px;font-weight:700;letter-spacing:-.3px}
+.brand-name em{color:var(--green);font-style:normal}
+
+/* controls */
+.ctrl{padding:16px 22px;border-bottom:1px solid var(--border);flex-shrink:0;display:flex;flex-direction:column;gap:12px}
+.f-label{font-family:'IBM Plex Mono',monospace;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);display:block;margin-bottom:5px}
+.sel-w{position:relative}
+.sel-w::after{content:'▾';position:absolute;right:10px;top:50%;transform:translateY(-50%);color:var(--muted);pointer-events:none;font-size:10px}
+select,input[type=text],input[type=range]{width:100%;background:var(--s2);border:1px solid var(--b2);
+  border-radius:7px;color:var(--text);font-family:'IBM Plex Mono',monospace;font-size:13px;
+  padding:9px 12px;outline:none;appearance:none;transition:border-color .15s,box-shadow .15s}
+select option{background:var(--s2)}
+select:focus,input:focus{border-color:var(--green);box-shadow:var(--glow-sm)}
+input[type=range]{padding:3px 0;height:auto;accent-color:var(--green)}
+.rrow{display:flex;align-items:center;gap:8px}
+.rrow input{flex:1}
+.rval{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--green);min-width:22px;text-align:right}
+.btn-go{width:100%;padding:11px;border-radius:8px;border:none;cursor:pointer;
+  font-family:'IBM Plex Mono',monospace;font-size:12px;font-weight:600;letter-spacing:1px;
+  background:var(--green);color:#07090d;transition:all .2s}
+.btn-go:hover:not(:disabled){background:#5fffb4;box-shadow:var(--glow);transform:translateY(-1px)}
+.btn-go:disabled{opacity:.4;cursor:not-allowed}
+
+/* status pills — see collapsible section */
+
+/* profile scroll area */
+.prof-scroll{flex:1;overflow-y:auto}
+.prof-empty{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--muted);
+  margin:16px 22px;padding:18px;text-align:center;border:1px dashed var(--border);border-radius:8px}
+
+/* sidebar profile card */
+.scard{}
+.scard-top{background:linear-gradient(135deg,var(--s2),var(--s3));padding:18px 22px 14px;border-bottom:1px solid var(--border)}
+.scard-name{font-size:15px;font-weight:700;letter-spacing:-.2px;margin-bottom:2px}
+.scard-id{font-family:'IBM Plex Mono',monospace;font-size:10px;color:var(--muted)}
+.scard-body{padding:14px 22px;display:flex;flex-direction:column;gap:13px}
+.sec-title{font-family:'IBM Plex Mono',monospace;font-size:9px;letter-spacing:2px;
+  text-transform:uppercase;color:var(--muted);margin-bottom:6px;
+  padding-bottom:4px;border-bottom:1px solid var(--border)}
+.tags{display:flex;flex-wrap:wrap;gap:4px}
+.stag{font-family:'IBM Plex Mono',monospace;font-size:10px;padding:2px 8px;border-radius:4px}
+.stag.cat{background:rgba(123,143,255,.08);border:1px solid rgba(123,143,255,.22);color:#9aabff}
+.stag.sen{background:rgba(255,122,79,.08);border:1px solid rgba(255,122,79,.22);color:#ff9a7a}
+.stag.oth{background:rgba(61,255,160,.06);border:1px solid rgba(61,255,160,.18);color:#6fffc0}
+.kvs{display:flex;flex-direction:column;gap:4px}
+.kv{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+.kv-k{font-family:'IBM Plex Mono',monospace;font-size:10px;color:var(--muted);flex-shrink:0}
+.kv-v{font-size:11px;text-align:right;word-break:break-word}
+
+/* ── main area ───────────────────────────────────────────── */
+.main{overflow-y:auto;padding:28px 30px;display:flex;flex-direction:column;gap:18px}
+
+/* ── user banner (top of results) ───────────────────────── */
+.ubanner{background:var(--s1);border:1px solid var(--b2);border-radius:12px;
+  padding:20px 24px;display:flex;align-items:flex-start;gap:18px}
+.uavatar{width:52px;height:52px;border-radius:50%;flex-shrink:0;
+  background:linear-gradient(135deg,var(--green),var(--blue));
+  display:flex;align-items:center;justify-content:center;
+  font-family:'IBM Plex Mono',monospace;font-size:20px;font-weight:700;color:#07090d}
+.uinfo{flex:1;min-width:0}
+.uname{font-size:17px;font-weight:700;letter-spacing:-.3px;margin-bottom:2px}
+.uid{font-family:'IBM Plex Mono',monospace;font-size:10px;color:var(--muted);margin-bottom:10px}
+.utags{display:flex;flex-wrap:wrap;gap:5px}
+.utag{font-family:'IBM Plex Mono',monospace;font-size:10px;padding:3px 9px;border-radius:4px}
+.utag.cat{background:rgba(123,143,255,.1);border:1px solid rgba(123,143,255,.22);color:#9aabff}
+.utag.sen{background:rgba(255,122,79,.1);border:1px solid rgba(255,122,79,.22);color:#ff9a7a}
+.utag.oth{background:rgba(61,255,160,.07);border:1px solid rgba(61,255,160,.18);color:#6fffc0}
+.ustats{margin-left:auto;text-align:right;flex-shrink:0}
+.ustat-val{font-family:'IBM Plex Mono',monospace;font-size:18px;font-weight:600;color:var(--green)}
+.ustat-lbl{font-family:'IBM Plex Mono',monospace;font-size:9px;color:var(--muted);text-transform:uppercase;letter-spacing:1px}
+
+/* results header */
+.rhead{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.rhead-title{font-size:19px;font-weight:700;letter-spacing:-.3px}
+.mbadge{font-family:'IBM Plex Mono',monospace;font-size:10px;padding:3px 10px;
+  border-radius:4px;border:1px solid rgba(61,255,160,.25);
+  color:var(--green);background:rgba(61,255,160,.06)}
+
+/* empty/loading */
+.empty{border:1px dashed var(--b2);border-radius:12px;padding:64px 28px;text-align:center;color:var(--muted)}
+.empty .ico{font-size:42px;margin-bottom:12px;opacity:.25}
+.empty p{font-size:15px;margin-bottom:6px}
+.empty small{font-family:'IBM Plex Mono',monospace;font-size:11px;line-height:1.9}
+.spin{display:inline-block;width:16px;height:16px;border:2px solid var(--b2);
+  border-top-color:var(--green);border-radius:50%;animation:rot .7s linear infinite;vertical-align:middle}
+@keyframes rot{to{transform:rotate(360deg)}}
+@keyframes up{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+
+/* ── result cards ────────────────────────────────────────── */
+.cards{display:flex;flex-direction:column;gap:12px}
+.rcard{background:var(--s1);border:1px solid var(--border);border-radius:12px;
+  overflow:hidden;animation:up .28s ease both;transition:border-color .2s}
+.rcard:hover{border-color:var(--b2)}
+.rcard:nth-child(1){animation-delay:.00s}.rcard:nth-child(2){animation-delay:.04s}
+.rcard:nth-child(3){animation-delay:.08s}.rcard:nth-child(4){animation-delay:.12s}
+.rcard:nth-child(5){animation-delay:.16s}.rcard:nth-child(6){animation-delay:.20s}
+.rcard:nth-child(7){animation-delay:.24s}.rcard:nth-child(8){animation-delay:.28s}
+.rcard:nth-child(9){animation-delay:.32s}.rcard:nth-child(10){animation-delay:.36s}
+
+/* card header row */
+.ctop{display:flex;align-items:flex-start;gap:14px;padding:16px 18px 10px}
+.rank{font-family:'IBM Plex Mono',monospace;font-size:22px;font-weight:600;
+  color:var(--muted2);line-height:1;flex-shrink:0;min-width:36px}
+.cinfo{flex:1;min-width:0}
+.pname{font-size:15px;font-weight:600;margin-bottom:1px}
+.pkey{font-family:'IBM Plex Mono',monospace;font-size:10px;color:var(--muted);margin-bottom:7px}
+.srow{display:flex;align-items:center;gap:8px}
+.sbar{flex:1;height:3px;background:var(--s3);border-radius:100px;overflow:hidden}
+.sfill{height:100%;border-radius:100px;background:linear-gradient(90deg,var(--green),var(--blue));transition:width .5s ease}
+.sval{font-family:'IBM Plex Mono',monospace;font-size:10px;color:var(--muted);white-space:nowrap}
+
+/* evidence pills */
+.evrow{display:flex;gap:6px;flex-wrap:wrap;padding:0 18px 12px}
+.epill{font-family:'IBM Plex Mono',monospace;font-size:10px;padding:3px 9px;border-radius:4px}
+.epill.c{background:rgba(123,143,255,.09);border:1px solid rgba(123,143,255,.2);color:#9aabff}
+.epill.s{background:rgba(255,122,79,.09);border:1px solid rgba(255,122,79,.2);color:#ff9a7a}
+.epill.u{background:rgba(61,255,160,.06);border:1px solid rgba(61,255,160,.18);color:var(--green)}
+
+/* evidence detail */
+.evgrid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;
+  padding:12px 18px;border-top:1px solid var(--border)}
+@media(max-width:860px){.evgrid{grid-template-columns:1fr}}
+.ev-t{font-family:'IBM Plex Mono',monospace;font-size:9px;letter-spacing:1.5px;
+  text-transform:uppercase;color:var(--muted);margin-bottom:5px}
+.evtags{display:flex;flex-wrap:wrap;gap:4px}
+.evtag{font-family:'IBM Plex Mono',monospace;font-size:10px;padding:2px 7px;border-radius:3px}
+.evratio{font-family:'IBM Plex Mono',monospace;font-size:10px;color:var(--muted);margin-top:4px}
+.evnone{font-family:'IBM Plex Mono',monospace;font-size:10px;color:var(--muted2);font-style:italic}
+
+/* AI narrative explanation */
+.narr-wrap{padding:10px 18px 14px;border-top:1px solid var(--border)}
+.narr-btn{font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.5px;
+  padding:5px 13px;border-radius:5px;border:1px solid rgba(123,143,255,.28);
+  background:rgba(123,143,255,.06);color:#9aabff;cursor:pointer;transition:all .15s}
+.narr-btn:hover{background:rgba(123,143,255,.14);border-color:rgba(123,143,255,.5)}
+.narr-btn:disabled{opacity:.45;cursor:not-allowed}
+.narr-box{margin-top:10px;padding:12px 14px;border-radius:8px;
+  background:rgba(123,143,255,.06);border:1px solid rgba(123,143,255,.18);
+  font-size:13px;line-height:1.65;color:var(--text);display:none}
+.narr-source{font-family:'IBM Plex Mono',monospace;font-size:9px;
+  color:var(--muted);margin-top:6px;letter-spacing:.5px}
+
+/* collapsible status section */
+.pills-toggle{padding:8px 22px;border-bottom:1px solid var(--border);flex-shrink:0;
+  display:flex;align-items:center;justify-content:space-between;cursor:pointer;
+  font-family:'IBM Plex Mono',monospace;font-size:9px;letter-spacing:2px;
+  text-transform:uppercase;color:var(--muted);user-select:none}
+.pills-toggle:hover{color:var(--text)}
+.pills-toggle .arrow{transition:transform .2s;font-size:10px}
+.pills-toggle.open .arrow{transform:rotate(180deg)}
+.pills{padding:0 22px;border-bottom:1px solid var(--border);flex-shrink:0;
+  display:flex;flex-direction:column;gap:4px;overflow:hidden;
+  max-height:0;transition:max-height .25s ease,padding .25s ease}
+.pills.open{max-height:300px;padding-top:8px;padding-bottom:10px}
+.pill{display:flex;align-items:center;gap:7px;font-family:'IBM Plex Mono',monospace;
+  font-size:10px;color:var(--muted);background:var(--s2);border:1px solid var(--border);
+  border-radius:5px;padding:4px 9px}
+.dot{width:5px;height:5px;border-radius:50%;background:var(--muted2);flex-shrink:0}
+.dot.on{background:var(--green);box-shadow:0 0 5px var(--green)}
+.dot.warn{background:var(--orange)}
+/* sensory preference bars */
+.sen-bars{display:flex;flex-direction:column;gap:5px;margin-top:2px}
+.sen-row{display:flex;align-items:center;gap:7px}
+.sen-lbl{font-family:'IBM Plex Mono',monospace;font-size:9px;color:var(--muted);
+  width:100px;flex-shrink:0;text-transform:capitalize}
+.sen-track{flex:1;height:4px;background:var(--s3);border-radius:100px;overflow:hidden}
+.sen-fill{height:100%;border-radius:100px;background:linear-gradient(90deg,var(--orange),#ffb347)}
+.sen-val{font-family:'IBM Plex Mono',monospace;font-size:9px;color:var(--muted);
+  width:12px;text-align:right;flex-shrink:0}
+/* scrollbar */
+::-webkit-scrollbar{width:4px}
+::-webkit-scrollbar-track{background:transparent}
+::-webkit-scrollbar-thumb{background:var(--b2);border-radius:2px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<!-- ════════════════ SIDEBAR ════════════════ -->
+<aside class="sidebar">
+
+  <div class="brand">
+    <div class="brand-tag">GAT · TransR · PathLSTM</div>
+    <div class="brand-name">POI <em>Recommender</em></div>
+  </div>
+
+  <!-- Query controls -->
+  <div class="ctrl">
+    <div>
+      <label class="f-label">User</label>
+      <div class="sel-w">
+        <select id="user-sel">
+          {% for u in users %}
+          <option value="{{u.id}}">{{u.name}}</option>
+          {% endfor %}
+          {% if not users %}<option value="0">user_0</option>{% endif %}
+        </select>
+      </div>
+    </div>
+    <div>
+      <label class="f-label">Top K</label>
+      <div class="rrow">
+        <input type="range" id="topk-r" min="1" max="30" value="10"
+               oninput="document.getElementById('topk-v').textContent=this.value"/>
+        <span class="rval" id="topk-v">10</span>
+      </div>
+    </div>
+    <button class="btn-go" id="rec-btn" onclick="fetchRecs()">Get Recommendations →</button>
+  </div>
+
+  <!-- Status pills (collapsible) -->
+  <div class="pills-toggle" id="pills-toggle" onclick="togglePills()">
+    <span>System Status</span><span class="arrow">▾</span>
+  </div>
+  <div class="pills" id="pills-panel">
+    <div class="pill"><span class="dot {{ 'on' if stats.graph_loaded else '' }}"></span>Graph: {{stats.num_users}} users · {{stats.num_pois}} POIs</div>
+    <div class="pill"><span class="dot {{ 'on' if stats.model_loaded else '' }}"></span>PathLSTM: {{ 'loaded' if stats.model_loaded else 'missing' }}</div>
+    <div class="pill"><span class="dot {{ 'on' if stats.gat_loaded else '' }}"></span>GAT fallback: {{ 'ready' if stats.gat_loaded else 'missing' }}</div>
+    <div class="pill"><span class="dot {{ 'on' if stats.users_with_paths>0 else 'warn' }}"></span>Enriched paths: {{stats.users_with_paths}}/{{stats.num_users}} users</div>
+    <div class="pill"><span class="dot {{ 'on' if stats.poi_names_loaded>0 else 'warn' }}"></span>POI names CSV: {{stats.poi_names_loaded}}</div>
+    <div class="pill"><span class="dot {{ 'on' if stats.profiles_loaded>0 else 'warn' }}"></span>User profiles: {{stats.profiles_loaded}}</div>
+  </div>
+
+  <!-- Sidebar user profile -->
+  <div class="prof-scroll" id="sidebar-profile">
+    <div class="prof-empty">Select a user to preview their profile</div>
+  </div>
+
+</aside>
+
+<!-- ════════════════ MAIN ════════════════ -->
+<main class="main">
+
+  <!-- User profile banner — shown at top when results load -->
+  <div id="user-banner" style="display:none"></div>
+
+  <!-- Results -->
+  <div id="results-area">
+    <div class="empty">
+      <div class="ico">⬡</div>
+      <p>Select a user and click <strong>Get Recommendations</strong></p>
+      <small>
+        Scored via AblationPathRecommendationModel (PathLSTM + attention + MLP)<br/>
+        GAT cosine-similarity fallback if enriched paths are unavailable
+      </small>
+    </div>
+  </div>
+
+</main>
+</div>
+
+<script>
+/* ════════════════════════════════════════════
+   STATE
+════════════════════════════════════════════ */
+let cachedProfile = null;
+let cachedUserKey = null;
+
+/* ════════════════════════════════════════════
+   PROFILE LOADING
+════════════════════════════════════════════ */
+document.getElementById('user-sel').addEventListener('change', function(){ loadProfile(this.value); });
+
+async function loadProfile(uid) {
+  const panel = document.getElementById('sidebar-profile');
+  panel.innerHTML = '<div class="prof-empty"><span class="spin"></span></div>';
+  cachedProfile = null;
+  try {
+    const r = await fetch('/api/user-profile/' + uid);
+    const d = await r.json();
+    if (!r.ok || !d.success) {
+      panel.innerHTML = '<div class="prof-empty">No profile for user ' + uid + '</div>';
+      return;
+    }
+    cachedProfile = d.profile;
+    cachedUserKey = d.user_key;
+    panel.innerHTML = renderSidebarProfile(d.profile, d.user_key, uid);
+  } catch(e) {
+    panel.innerHTML = '<div class="prof-empty">Error: ' + e.message + '</div>';
+  }
+}
+
+function renderSidebarProfile(p, key, uid) {
+  const name = 'User ' + (p.userId !== undefined ? p.userId : uid);
+
+  const skipSet = new Set(['userId','_id','__v','createdAt','updatedAt','name',
+    'displayName','userName','categories','sensory','poi_ratings','timestamp']);
+
+  // Categories: {theatre:3, shop:3, ...} sorted by rating
+  let catHtml = '';
+  if (p.categories && typeof p.categories === 'object' && !Array.isArray(p.categories)) {
+    const sorted = Object.entries(p.categories).sort((a,b)=>b[1]-a[1]);
+    catHtml = sorted.map(([k,v])=>
+      '<span class="stag cat" title="rating: '+v+'">'+esc(k.replace(/_/g,' '))
+      +'<span style="opacity:.45;margin-left:4px;font-size:8px">'+v+'</span></span>'
+    ).join('');
+  }
+
+  // Sensory: {crowd:2, noise:4, ...} as progress bars
+  let senHtml = '';
+  if (p.sensory && typeof p.sensory === 'object' && !Array.isArray(p.sensory)) {
+    senHtml = '<div class="sen-bars">'
+      + Object.entries(p.sensory).map(([k,v])=>
+          '<div class="sen-row">'
+          + '<span class="sen-lbl">'+esc(k.replace(/_/g,' '))+'</span>'
+          + '<div class="sen-track"><div class="sen-fill" style="width:'+((v/5)*100)+'%"></div></div>'
+          + '<span class="sen-val">'+v+'</span>'
+          + '</div>'
+        ).join('')
+      + '</div>';
+  }
+
+  // Scalar fields (age, gender, etc.)
+  const kvs = Object.entries(p).filter(([k,v])=>
+    !skipSet.has(k) && typeof v !== 'object' && v !== null && v !== undefined
+  );
+
+  let h = '<div class="scard">'
+    + '<div class="scard-top">'
+    + '<div class="scard-name">'+esc(name)+'</div>'
+    + '<div class="scard-id">'+esc(key)+'</div>'
+    + '</div><div class="scard-body">';
+
+  if (kvs.length)
+    h += '<div><div class="sec-title">Details</div><div class="kvs">'
+      + kvs.map(([k,v])=>'<div class="kv"><span class="kv-k">'+esc(camel(k))+'</span><span class="kv-v">'+esc(String(v))+'</span></div>').join('')
+      + '</div></div>';
+  if (catHtml)
+    h += '<div><div class="sec-title">Category Preferences</div><div class="tags">'+catHtml+'</div></div>';
+  if (senHtml)
+    h += '<div><div class="sec-title">Sensory Preferences</div>'+senHtml+'</div>';
+
+  h += '</div></div>';
+  return h;
+}
+
+function sec(title, inner) {
+  return '<div><div class="sec-title">' + title + '</div><div class="tags">' + inner + '</div></div>';
+}
+
+/* ════════════════════════════════════════════
+   USER BANNER (top of results)
+════════════════════════════════════════════ */
+function showUserBanner(profile, userKey, uid, numResults, method) {
+  const banner = document.getElementById('user-banner');
+  if (!profile) { banner.style.display = 'none'; return; }
+  const rawName = profile.name || profile.displayName || profile.userName || userKey || 'User ' + uid;
+  const name    = typeof rawName === 'object' ? (rawName.$oid || JSON.stringify(rawName)) : String(rawName);
+  const initial = name.charAt(0).toUpperCase();
+  const cats    = pickArr(profile, ['preferredCategories','categories','categoryPreferences','category_preferences']).slice(0,5);
+  const sensory = pickArr(profile, ['sensoryPreferences','sensoryPreference','sensoryAttributes','sensoryAttrs',
+                                     'sensory_preferences','sensory_attributes','sensory_attrs']).slice(0,3);
+  const other   = pickArr(profile, ['otherPreferences','otherAttributes','otherAttrs',
+                                     'other_preferences','other_attributes','other_attrs']).slice(0,2);
+
+  const tags = [
+    ...cats.map(c=>'<span class="utag cat">'+esc(fmt(c))+'</span>'),
+    ...sensory.map(s=>'<span class="utag sen">'+esc(fmt(s))+'</span>'),
+    ...other.map(o=>'<span class="utag oth">'+esc(fmt(o))+'</span>'),
+  ].join('');
+
+  banner.style.display = 'block';
+  banner.innerHTML = '<div class="ubanner">'
+    + '<div class="uavatar">' + initial + '</div>'
+    + '<div class="uinfo">'
+    + '<div class="uname">' + esc(name) + '</div>'
+    + '<div class="uid">' + esc(userKey) + '</div>'
+    + (tags ? '<div class="utags">' + tags + '</div>' : '')
+    + '</div>'
+    + '<div class="ustats">'
+    + '<div class="ustat-val">' + numResults + '</div>'
+    + '<div class="ustat-lbl">Results</div>'
+    + '<div style="margin-top:8px;font-family:\'IBM Plex Mono\',monospace;font-size:10px;color:var(--muted)">' + esc(method) + '</div>'
+    + '</div>'
+    + '</div>';
+}
+
+/* ════════════════════════════════════════════
+   FETCH RECOMMENDATIONS
+════════════════════════════════════════════ */
+async function fetchRecs() {
+  const uid  = document.getElementById('user-sel').value;
+  const topk = document.getElementById('topk-r').value;
+  const btn  = document.getElementById('rec-btn');
+  const area = document.getElementById('results-area');
+
+  btn.disabled = true;
+  btn.innerHTML = '<span class="spin"></span>';
+  area.innerHTML = '<div class="empty"><div class="spin" style="width:32px;height:32px;border-width:3px;"></div></div>';
+  document.getElementById('user-banner').style.display = 'none';
+
+  if (!cachedProfile || String(document.getElementById('user-sel').value) !== String(uid)) {
+    await loadProfile(uid);
+  }
+
+  try {
+    const r = await fetch('/api/recommend?user_id=' + uid + '&top_k=' + topk);
+    const d = await r.json();
+    if (!r.ok || d.error) { showError(d.error || 'Unknown error'); return; }
+    showUserBanner(cachedProfile, d.user_key, uid, d.results.length, d.method);
+    renderResults(d);
+  } catch(e) {
+    showError(e.message);
+  } finally {
+    btn.disabled = false;
+    btn.innerHTML = 'Get Recommendations →';
+  }
+}
+
+/* ════════════════════════════════════════════
+   RENDER RESULTS
+════════════════════════════════════════════ */
+function renderResults(data) {
+  const {results, user_key, method, user_id} = data;
+  const uid = user_id;
+  if (!results || !results.length) {
+    document.getElementById('results-area').innerHTML =
+      '<div class="empty"><div class="ico">∅</div>'
+      + '<p>No recommendations for <strong>' + esc(user_key) + '</strong></p>'
+      + '<small>No enriched paths or GAT embeddings found for this user.</small></div>';
+    return;
+  }
+
+  const scores = results.map(r=>r.score);
+  const maxS = Math.max(...scores), minS = Math.min(...scores), rng = maxS - minS || 1;
+
+  const header = '<div class="rhead">'
+    + '<div class="rhead-title">Top ' + results.length + ' for <strong>' + esc(user_key) + '</strong></div>'
+    + '<span class="mbadge">' + esc(method) + '</span>'
+    + '</div>';
+
+  const cards = results.map((rec, idx) => {
+    const pct = Math.max(5, ((rec.score - minS) / rng * 100)).toFixed(1);
+    const ex  = rec.explanation || {};
+    const pr  = ex.preferences  || {};
+    const si  = ex.similar_users || {};
+    const mc  = (pr.matched_categories || []).length;
+    const ms  = (pr.matched_sensory    || []).length;
+    const su  = si.count || 0;
+
+    let pills = '';
+    if (mc) pills += '<span class="epill c">⬡ ' + mc + ' categories</span>';
+    if (ms) pills += '<span class="epill s">◎ ' + ms + ' sensory attrs</span>';
+    if (su) pills += '<span class="epill u">⬤ ' + su + ' similar users</span>';
+
+    const catTags  = (pr.matched_categories||[]).map(c=>'<span class="evtag" style="background:rgba(123,143,255,.09);border:1px solid rgba(123,143,255,.2);color:#9aabff">'+esc(c)+'</span>').join('');
+    const sensTags = (pr.matched_sensory||[]).map(s=>'<span class="evtag" style="background:rgba(255,122,79,.09);border:1px solid rgba(255,122,79,.2);color:#ff9a7a">'+esc(s)+'</span>').join('');
+    const simNames = (si.names||[]).slice(0,4).join(', ');
+
+    return '<div class="rcard">'
+      // top
+      + '<div class="ctop">'
+      + '<div class="rank">' + String(rec.rank).padStart(2,'0') + '</div>'
+      + '<div class="cinfo">'
+      + '<div class="pname">' + esc(rec.name) + '</div>'
+      + '<div class="pkey">'  + esc(rec.poi_key) + '</div>'
+      + '<div class="srow"><div class="sbar"><div class="sfill" style="width:' + pct + '%"></div></div></div>'
+      + '</div></div>'
+      // pills
+      + (pills ? '<div class="evrow">' + pills + '</div>' : '')
+      // evidence grid
+      + '<div class="evgrid">'
+      // col 1 – categories
+      + '<div><div class="ev-t">Matched Categories</div>'
+      + (catTags ? '<div class="evtags">' + catTags + '</div>' : '<span class="evnone">none</span>')
+      + (pr.cat_ratio ? '<div class="evratio">' + esc(pr.cat_ratio) + ' of user prefs</div>' : '')
+      + '</div>'
+      // col 2 – sensory
+      + '<div><div class="ev-t">Matched Sensory</div>'
+      + (sensTags ? '<div class="evtags">' + sensTags + '</div>' : '<span class="evnone">none</span>')
+      + (pr.sensory_ratio ? '<div class="evratio">' + esc(pr.sensory_ratio) + ' of user prefs</div>' : '')
+      + '</div>'
+      // col 3 – similar users
+      + '<div><div class="ev-t">Similar Users</div>'
+      + (su > 0 ? '<strong style="color:var(--green)">' + su + '</strong> users' : '<span class="evnone">none</span>')
+      + (simNames ? '<div class="evratio">' + esc(simNames) + (su > 4 ? '…' : '') + '</div>' : '')
+      + '</div>'
+      + '</div>'
+      // AI narrative section
+      + '<div class="narr-wrap">'
+      + '<button class="narr-btn" onclick="fetchNarrative(this,' + uid + ',' + rec.poi_id + ')">✦ Why recommended?</button>'
+      + '<div class="narr-box" id="narr-' + uid + '-' + rec.poi_id + '"></div>'
+      + '</div>'
+      + '</div>';
+  }).join('');
+
+  document.getElementById('results-area').innerHTML =
+    header + '<div class="cards">' + cards + '</div>';
+}
+
+/* ════════════════════════════════════════════
+   AI NARRATIVE EXPLANATION
+════════════════════════════════════════════ */
+async function fetchNarrative(btn, userId, poiId) {
+  btn.disabled = true;
+  btn.innerHTML = '<span class="spin"></span> Generating…';
+  const box = document.getElementById('narr-' + userId + '-' + poiId);
+  box.style.display = 'block';
+  box.innerHTML = '<span class="spin"></span>';
+  try {
+    const r = await fetch('/api/explain-narrative?user_id=' + userId + '&poi_id=' + poiId);
+    const d = await r.json();
+    if (d.error) throw new Error(d.error);
+    box.innerHTML = '<div>' + esc(d.narrative) + '</div>'
+      + '<div class="narr-source">⚙ source: ' + esc(d.source || 'unknown') + '</div>';
+    btn.style.display = 'none';
+  } catch(e) {
+    box.innerHTML = '<span style="color:var(--orange)">Error: ' + esc(e.message) + '</span>';
+    btn.disabled = false;
+    btn.innerHTML = '✦ Why recommended?';
+  }
+}
+
+/* ════════════════════════════════════════════
+   UTILS
+════════════════════════════════════════════ */
+function showError(msg) {
+  document.getElementById('results-area').innerHTML =
+    '<div class="empty"><div class="ico">⚠</div><p>Error: ' + esc(msg) + '</p></div>';
+}
+function esc(s) {
+  return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+function fmt(v) {
+  if (v === null || v === undefined) return '';
+  if (typeof v === 'object') return v.$oid ? v.$oid : JSON.stringify(v);
+  return String(v).replace(/_/g,' ');
+}
+function camel(s) { return s.replace(/([A-Z])/g,' $1').replace(/^./,c=>c.toUpperCase()).trim(); }
+
+function toArr(v) {
+  if (!v) return [];
+  if (Array.isArray(v)) return v;
+  if (typeof v === 'string') return v.split(',').map(s=>s.trim()).filter(Boolean);
+  if (typeof v === 'object' && !Array.isArray(v)) return Object.values(v).filter(x => typeof x === 'string');
+  return [String(v)];
+}
+
+function pickArr(obj, keys) {
+  for (const k of keys) { if (obj[k] !== undefined && obj[k] !== null) return toArr(obj[k]); }
+  return [];
+}
+
+/* ════════════════════════════════════════════
+   TOGGLE STATUS PILLS
+════════════════════════════════════════════ */
+function togglePills() {
+  const panel  = document.getElementById('pills-panel');
+  const toggle = document.getElementById('pills-toggle');
+  panel.classList.toggle('open');
+  toggle.classList.toggle('open');
+}
+
+/* ════════════════════════════════════════════
+   INIT
+════════════════════════════════════════════ */
+window.addEventListener('DOMContentLoaded', () => {
+  const sel = document.getElementById('user-sel');
+  if (sel.value) loadProfile(sel.value);
+});
+</script>
+</body>
+</html>

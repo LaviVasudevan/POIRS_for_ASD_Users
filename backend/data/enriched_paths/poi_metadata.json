@@ -1,0 +1,15 @@
+{
+  "num_total_paths": 1018704,
+  "num_kept_paths": 1018704,
+  "num_removed_paths": 0,
+  "filter_config": {
+    "strategy": "softmax",
+    "param": 75,
+    "max_path_length": 3,
+    "aggregation": "mean",
+    "reverse": false,
+    "streaming_mode": true
+  },
+  "entity2id_size": 898,
+  "relation2id_size": 14
+}

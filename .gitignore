@@ -1,0 +1,31 @@
+# Secrets
+.env
+
+# Questionnaire data - private
+*questionnaire*
+*questionnaires*
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+*.egg-info/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Old/unused scripts
+Population_POI.py
+Population_Image.py
+inspect_Pkl.py
+
+# Enriched path chunks - runtime generated
+backend/data/enriched_paths/poi_paths_chunk_*.pkl
+backend/data/enriched_paths/transr_epoch_*.pt
+backend/data/enriched_paths/*.pt
