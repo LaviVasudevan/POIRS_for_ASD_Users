@@ -1,0 +1,169 @@
+# .github/workflows/process_staging.yml
+#
+# Triggers when 1+ items are pending in MongoDB staging collection.
+#
+# TWO JOBS:
+#
+#   check   — fast: counts pending items, decides whether to proceed
+#
+#   process — runs process_staging.py, commits updated jsonl files +
+#             staging exports, then runs the full retrain pipeline,
+#             commits new .pt model files, and restarts the HF Space.
+#
+# Required GitHub Secrets  (Settings → Secrets and variables → Actions):
+#   MONGODB_URI    Atlas connection string, e.g. mongodb+srv://user:pass@cluster/
+#   HF_TOKEN       HuggingFace token with WRITE access to your Space
+#   HF_SPACE       Space name, e.g.  youruser/poirs-app
+#
+# Trigger threshold: N=1 (any pending item triggers the run).
+# Change the python -c count check below to raise it.
+
+name: Process Staging & Retrain
+
+on:
+  schedule:
+    - cron: "0 * * * *"   # check every hour
+  workflow_dispatch:        # manual trigger from Actions tab
+
+jobs:
+  # ── JOB 1: quick check ────────────────────────────────────────────────────
+  check:
+    name: Check pending count
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    outputs:
+      should_run: ${{ steps.count.outputs.should_run }}
+
+    steps:
+      - name: Install pymongo
+        run: pip install pymongo --quiet
+
+      - name: Count pending staging items
+        id: count
+        env:
+          MONGODB_URI: ${{ secrets.MONGODB_URI }}
+        run: |
+          python3 - <<'PYEOF'
+          import os, sys
+          from pymongo import MongoClient
+          uri = os.environ["MONGODB_URI"]
+          db  = MongoClient(uri)["POIRS"]
+          n   = db["staging"].count_documents({"status": "pending"})
+          print(f"Pending items: {n}")
+          # Change 1 → higher number to raise the trigger threshold
+          threshold = 1
+          result = "true" if n >= threshold else "false"
+          with open(os.environ["GITHUB_OUTPUT"], "a") as fh:
+              fh.write(f"should_run={result}\n")
+          print(f"should_run={result}")
+          PYEOF
+
+  # ── JOB 2: process + retrain ──────────────────────────────────────────────
+  process:
+    name: Process staging & retrain
+    needs: check
+    if: needs.check.outputs.should_run == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 120    # full retrain can be slow on CPU
+
+    steps:
+      # ── checkout ────────────────────────────────────────────────────────────
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      # ── Python + cache ───────────────────────────────────────────────────────
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      # ── Install dependencies ─────────────────────────────────────────────────
+      # Core deps for process_staging.py (lightweight, always needed)
+      - name: Install staging deps
+        run: pip install pymongo --quiet
+
+      # PyTorch + PyG for the retrain pipeline.
+      # CPU-only build is used in CI (no GPU on free runners).
+      # The retrain pipeline auto-detects cpu device so this is fine.
+      - name: Install retrain deps
+        run: |
+          pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu --quiet
+          pip install torch-geometric --quiet
+          pip install torch-scatter torch-sparse -f https://data.pyg.org/whl/torch-$(python3 -c "import torch; print(torch.__version__.split('+')[0])")+cpu.html --quiet
+          pip install tqdm numpy pandas scikit-learn --quiet
+
+      # ── Process staging ──────────────────────────────────────────────────────
+      - name: Process staging collection
+        env:
+          MONGODB_URI: ${{ secrets.MONGODB_URI }}
+        run: python process_staging.py
+        # Note: no --retrain here — we run staging first so the commit
+        # of updated jsonl files happens even if retrain fails.
+
+      # ── Commit updated data files ────────────────────────────────────────────
+      - name: Commit staging exports + updated jsonl
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add staging_exports/ data/reviews.jsonl data/pois.jsonl || true
+          if git diff --cached --quiet; then
+            echo "Nothing new to commit."
+          else
+            git commit -m "ci: staging export $(date -u '+%Y-%m-%d %H:%M') UTC"
+            git push
+          fi
+
+      # ── Run full retrain pipeline ────────────────────────────────────────────
+      - name: Run retrain pipeline
+        env:
+          MONGODB_URI: ${{ secrets.MONGODB_URI }}
+        run: python process_staging.py --retrain
+        # process_staging.py with --retrain re-reads no pending items
+        # (all were marked processed above) but still runs the pipeline.
+        # The pipeline reads backend/data/poi_graph_v6.pt and writes new .pt files.
+
+      # ── Commit new model artifacts ───────────────────────────────────────────
+      - name: Commit new .pt model files
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add backend/data/*.pt || true
+          if git diff --cached --quiet; then
+            echo "No model files changed."
+          else
+            git commit -m "ci: retrain $(date -u '+%Y-%m-%d %H:%M') UTC [skip ci]"
+            git push
+          fi
+
+      # ── Restart HuggingFace Space ────────────────────────────────────────────
+      # This tells the running Space to restart and reload the new .pt files
+      # from the repo (if your Space is set up to pull from the repo on startup).
+      - name: Restart HuggingFace Space
+        if: ${{ secrets.HF_TOKEN != '' && secrets.HF_SPACE != '' }}
+        run: |
+          echo "Restarting ${{ secrets.HF_SPACE }}..."
+          HTTP=$(curl -s -o /tmp/hf_resp.json -w "%{http_code}" \
+            -X POST \
+            "https://huggingface.co/api/spaces/${{ secrets.HF_SPACE }}/restart" \
+            -H "Authorization: Bearer ${{ secrets.HF_TOKEN }}" \
+            -H "Content-Type: application/json")
+          cat /tmp/hf_resp.json
+          echo ""
+          if [ "$HTTP" -ge 200 ] && [ "$HTTP" -lt 300 ]; then
+            echo "Space restart triggered (HTTP $HTTP)"
+          else
+            echo "WARNING: Space restart returned HTTP $HTTP"
+          fi
+
+      # ── Final summary ────────────────────────────────────────────────────────
+      - name: Summary
+        if: always()
+        run: |
+          echo "=== Staging exports ==="
+          ls -lh staging_exports/ 2>/dev/null || echo "(none)"
+          echo ""
+          echo "=== Model files ==="
+          ls -lh backend/data/*.pt 2>/dev/null || echo "(none)"
