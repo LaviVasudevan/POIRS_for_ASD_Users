@@ -20,10 +20,10 @@
 
 name: Process Staging & Retrain
 
-on:
-  schedule:
-    - cron: "0 * * * *"   # check every hour
-  workflow_dispatch:        # manual trigger from Actions tab
+#on:
+#  schedule:
+#    - cron: "0 * * * *"   # check every hour
+#  workflow_dispatch:        # manual trigger from Actions tab
 
 jobs:
   # ── JOB 1: quick check ────────────────────────────────────────────────────
